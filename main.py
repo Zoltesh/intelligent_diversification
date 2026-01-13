@@ -35,19 +35,15 @@ async def main():
     finally:
         await exchange.close()
 
-async def read():
+def read():
+    # Also print total number of rows across all symbols
+    total_rows = 0
     for symbol in SYMBOLS:
-        lf = await read_ohlcv(f"{symbol}-USDC")
+        lf = pl.scan_parquet(f"data_cleaned/{symbol}-USDC.parquet")
         df = lf.collect()
-        # Print the shape and the start/end timestamps as datetimes using polars from_epoch
-        first_dt = df.select(
-            pl.from_epoch("timestamp", time_unit="ms")
-        ).head(1).item(0, 0)
-
-        last_dt = df.select(
-            pl.from_epoch("timestamp", time_unit="ms")
-        ).tail(1).item(0, 0)
-        print(f"{symbol} {df.shape} from {first_dt} to {last_dt}")
+        print(f"{symbol} {df.shape}")
+        total_rows += df.shape[0]
+    print(f"Total number of rows across all symbols: {total_rows}")
 
 if __name__ == "__main__":
-    asyncio.run(read())
+    read()
