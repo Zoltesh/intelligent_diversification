@@ -5,14 +5,34 @@ Predictions using XGBoost
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 import polars as pl
 import xgboost as xgb
 
-WINDOW_SIZE = 2016  # 12 intervals * 24 hours * 7 days
-START_TIMESTAMP = 1735689600000  # Jan 1, 2025 00:00:00 UTC
-WEEKS_2025 = 52
+from features.feature_store import FeatureStore
+from pipeline.time_index import (
+    WINDOW_SIZE,
+    WEEKS_2025,
+    build_test_indices,
+    build_week_keys,
+)
+
+DEFAULT_XGB_PARAMS = {
+    "max_depth": 3,
+    "eta": 0.1,
+    "objective": "reg:squarederror",
+    "device": "cuda",
+    "tree_method": "hist",
+    "seed": 42,
+}
+
+DEFAULT_NUM_BOOST_ROUND = 100
 
 
 def load_engineered_features(data_dir: Path) -> dict[str, pl.DataFrame]:
@@ -49,62 +69,26 @@ def get_feature_cols(df: pl.DataFrame) -> list[str]:
     return [col for col in df.columns if col not in exclude]
 
 
-def build_test_indices(reference_df: pl.DataFrame) -> list[int]:
-    week_ms = WINDOW_SIZE * 5 * 60 * 1000
-    target_timestamps = [
-        START_TIMESTAMP + (week_ms * i) for i in range(WEEKS_2025)
-    ]
-
-    reference = reference_df.select("timestamp").with_row_index("idx")
-    reference = reference.sort("timestamp")
-    targets = pl.DataFrame({"timestamp": target_timestamps}).sort("timestamp")
-
-    forward = targets.join_asof(
-        reference,
-        on="timestamp",
-        strategy="forward",
-    )
-    if forward["idx"].null_count() > 0:
-        backward = targets.join_asof(
-            reference,
-            on="timestamp",
-            strategy="backward",
-        )
-        indices = forward["idx"].fill_null(backward["idx"])
-    else:
-        indices = forward["idx"]
-
-    if indices.null_count() > 0:
-        raise ValueError(
-            "Unable to map all weekly timestamps to indices"
-        )
-
-    return indices.cast(pl.Int64).to_list()
-
-
-def load_vif_pruned_features(
-    features_dir: Path,
-) -> dict[str, dict[str, list[str]]]:
-    vif_features: dict[str, dict[str, list[str]]] = {}
-    for json_path in sorted(features_dir.glob("*_vif_pruned_features.json")):
-        ticker = json_path.stem.replace("_vif_pruned_features", "")
-        vif_features[ticker] = json.loads(json_path.read_text())
-
-    if not vif_features:
-        raise ValueError(f"No VIF feature JSONs found in {features_dir}")
-
-    return vif_features
-
-
 def walk_forward_validation(
-    assets_dict: dict[str, pl.DataFrame]
+    assets_dict: dict[str, pl.DataFrame],
+    xgb_params: dict[str, object] | None = None,
+    num_boost_round: int = DEFAULT_NUM_BOOST_ROUND,
 ) -> tuple[dict[str, list[float]], dict[str, dict[str, list[dict[str, float]]]]]:
     assets_dict = add_targets(assets_dict)
     tickers = list(assets_dict.keys())
     reference_df = assets_dict[tickers[0]]
     test_indices = build_test_indices(reference_df)
-    features_dir = Path(__file__).resolve().parents[1] / "features"
-    vif_features = load_vif_pruned_features(features_dir)
+    week_keys = build_week_keys(len(test_indices))
+    feature_store = FeatureStore(Path(__file__).resolve().parents[1] / "features")
+    weekly_features = {
+        ticker.lower(): feature_store.resolve_weekly_features(
+            ticker,
+            assets_dict[ticker],
+            week_keys,
+            read_existing=True,
+        )
+        for ticker in tickers
+    }
 
     results: dict[str, list[float]] = {ticker: [] for ticker in tickers}
     weekly_importances: dict[str, list[list[dict[str, float]]]] = {
@@ -117,19 +101,17 @@ def walk_forward_validation(
         ticker: {} for ticker in tickers
     }
 
+    params = {**DEFAULT_XGB_PARAMS, **(xgb_params or {})}
+
     for week_idx, current_idx in enumerate(test_indices, start=1):
         for ticker, df in assets_dict.items():
             ticker_key = ticker.lower()
-            if ticker_key not in vif_features:
-                raise ValueError(
-                    f"Missing VIF features for {ticker} in {features_dir}"
-                )
+            if ticker_key not in weekly_features:
+                raise ValueError(f"Missing features for {ticker}")
             week_key = f"week{week_idx}"
-            feature_cols = vif_features[ticker_key].get(week_key)
+            feature_cols = weekly_features[ticker_key].get(week_key)
             if not feature_cols:
-                raise ValueError(
-                    f"No VIF features for {ticker} {week_key}"
-                )
+                raise ValueError(f"No features for {ticker} {week_key}")
             missing_cols = [col for col in feature_cols if col not in df.columns]
             if missing_cols:
                 raise ValueError(
@@ -164,15 +146,7 @@ def walk_forward_validation(
             )
             dtest = xgb.DMatrix(x_test, feature_names=feature_cols)
 
-            params = {
-                "max_depth": 3,
-                "eta": 0.1,
-                "objective": "reg:squarederror",
-                "device": "cuda",
-                "tree_method": "hist",
-                "seed": 42,
-            }
-            booster = xgb.train(params, dtrain, num_boost_round=100)
+            booster = xgb.train(params, dtrain, num_boost_round=num_boost_round)
             pred = float(booster.predict(dtest)[0])
             results[ticker].append(pred)
 
@@ -221,17 +195,34 @@ def save_importances(
 ) -> None:
     output_path.write_text(json.dumps(importances, indent=2))
 
-def main() -> None:
-    data_dir = Path(__file__).resolve().parents[1] / "engineered_features"
+
+def run_predictions(
+    *,
+    xgb_params: dict[str, object] | None = None,
+    num_boost_round: int = DEFAULT_NUM_BOOST_ROUND,
+    data_dir: Path | None = None,
+    results_dir: Path | None = None,
+) -> tuple[dict[str, list[float]], dict[str, dict[str, list[dict[str, float]]]]]:
+    base_dir = Path(__file__).resolve().parents[1]
+    data_dir = data_dir or (base_dir / "engineered_features")
+    results_dir = results_dir or (Path(__file__).resolve().parent / "results")
+    results_dir.mkdir(parents=True, exist_ok=True)
+
     assets_dict = load_engineered_features(data_dir)
-    results, importances = walk_forward_validation(assets_dict)
-    output_path = Path(__file__).resolve().parents[1] / "weekly_predictions_2025.json"
-    save_predictions(results, output_path)
-    importance_path = (
-        Path(__file__).resolve().parents[1]
-        / "weekly_feature_importances_2025.json"
+    results, importances = walk_forward_validation(
+        assets_dict,
+        xgb_params=xgb_params,
+        num_boost_round=num_boost_round,
     )
+    output_path = results_dir / "weekly_predictions_2025.json"
+    save_predictions(results, output_path)
+    importance_path = results_dir / "weekly_feature_importances_2025.json"
     save_importances(importances, importance_path)
+    return results, importances
+
+
+def main() -> None:
+    run_predictions()
 
 
 if __name__ == "__main__":

@@ -268,11 +268,18 @@ def run_simulation(
     return results
 
 
-def main() -> None:
+def run_optimization(
+    *,
+    predictions_path: Path | None = None,
+    data_dir: Path | None = None,
+    results_dir: Path | None = None,
+) -> List[Dict[str, object]]:
     base_dir = Path(__file__).resolve().parents[1]
-    predictions_path = base_dir / "weekly_predictions_2025.json"
-    data_dir = base_dir / "engineered_features"
-    results_dir = base_dir / "results"
+    predictions_path = predictions_path or (
+        base_dir / "ml_xgboost" / "results" / "weekly_predictions_2025.json"
+    )
+    data_dir = data_dir or (base_dir / "engineered_features")
+    results_dir = results_dir or (Path(__file__).resolve().parent / "results")
     results_dir.mkdir(parents=True, exist_ok=True)
 
     predictions = load_predictions(predictions_path)
@@ -282,12 +289,16 @@ def main() -> None:
         raise ValueError("Predictions must have 52 weeks.")
 
     wide_df, _ = load_wide_prices(data_dir, symbols)
-
     results = run_simulation(wide_df, predictions)
 
     output_path = results_dir / "weekly_weights.json"
     with output_path.open("w") as f:
         json.dump(results, f, indent=2)
+    return results
+
+
+def main() -> None:
+    run_optimization()
 
 
 if __name__ == "__main__":

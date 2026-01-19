@@ -1,13 +1,16 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 import polars as pl
 
-WINDOW_SIZE = 2016  # 12 intervals * 24 hours * 7 days
-START_TIMESTAMP = 1735689600000  # Jan 1, 2025 00:00:00 UTC
-WEEKS_2025 = 52
+from pipeline.time_index import WINDOW_SIZE, START_TIMESTAMP, WEEKS_2025
 
 
 def load_engineered_features(data_dir: Path) -> dict[str, pl.DataFrame]:
@@ -107,17 +110,28 @@ def compare_predictions(
 def save_results(results: dict[str, dict[str, list[float]]], out_path: Path) -> None:
     out_path.write_text(json.dumps(results, indent=2))
 
-
-def main() -> None:
+def run_price_validation(
+    *,
+    data_dir: Path | None = None,
+    results_dir: Path | None = None,
+) -> dict[str, dict[str, list[float]]]:
     base_dir = Path(__file__).resolve().parents[1]
-    data_dir = base_dir / "engineered_features"
-    pred_path = base_dir / "weekly_predictions_2025.json"
-    out_path = base_dir / "weekly_price_validation_2025.json"
+    data_dir = data_dir or (base_dir / "engineered_features")
+    results_dir = results_dir or (Path(__file__).resolve().parent / "results")
+    results_dir.mkdir(parents=True, exist_ok=True)
+
+    pred_path = results_dir / "weekly_predictions_2025.json"
+    out_path = results_dir / "weekly_price_validation_2025.json"
 
     assets_dict = load_engineered_features(data_dir)
     predictions = load_predictions(pred_path)
     results = compare_predictions(assets_dict, predictions)
     save_results(results, out_path)
+    return results
+
+
+def main() -> None:
+    run_price_validation()
 
 
 if __name__ == "__main__":

@@ -340,11 +340,18 @@ class PortfolioSimulator:
         }
 
 
-def main(weights_filename: str) -> None:
+def run_backtest(
+    *,
+    weights_filename: str = "weekly_weights",
+    data_dir: Path | None = None,
+    results_dir: Path | None = None,
+) -> dict[str, object]:
     base_dir = Path(__file__).resolve().parents[1]
-    weights_path = base_dir / "results" / f"{weights_filename}.json"
-    data_dir = base_dir / "engineered_features"
-    output_path = base_dir / "results" / f"weekly_backtest_metrics_{weights_filename}.json"
+    data_dir = data_dir or (base_dir / "engineered_features")
+    results_dir = results_dir or (Path(__file__).resolve().parent / "results")
+
+    weights_path = results_dir / f"{weights_filename}.json"
+    output_path = results_dir / f"weekly_backtest_metrics_{weights_filename}.json"
 
     simulator = PortfolioSimulator(weights_path=weights_path, data_dir=data_dir)
     results = simulator.run()
@@ -352,6 +359,11 @@ def main(weights_filename: str) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w") as f:
         json.dump(results, f, indent=2)
+    return results
+
+
+def main(weights_filename: str) -> None:
+    run_backtest(weights_filename=weights_filename)
 
 
 if __name__ == "__main__":
