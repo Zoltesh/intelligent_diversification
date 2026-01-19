@@ -136,8 +136,13 @@ def walk_forward_validation(
                     f"Missing feature columns for {ticker} {week_key}: {missing_cols}"
                 )
             train_df = df.slice(0, current_idx)
-            train_clean = train_df.filter(
-                pl.col("target_return_1w").is_not_null()
+            train_clean = (
+                train_df.with_row_index("idx")
+                .filter(
+                    pl.col("target_return_1w").is_not_null()
+                    & (pl.col("idx") + WINDOW_SIZE < current_idx)
+                )
+                .drop("idx")
             )
             if train_clean.is_empty():
                 raise ValueError(
