@@ -82,6 +82,20 @@ def build_test_indices(reference_df: pl.DataFrame) -> list[int]:
     return indices.cast(pl.Int64).to_list()
 
 
+def load_vif_pruned_features(
+    features_dir: Path,
+) -> dict[str, dict[str, list[str]]]:
+    vif_features: dict[str, dict[str, list[str]]] = {}
+    for json_path in sorted(features_dir.glob("*_vif_pruned_features.json")):
+        ticker = json_path.stem.replace("_vif_pruned_features", "")
+        vif_features[ticker] = json.loads(json_path.read_text())
+
+    if not vif_features:
+        raise ValueError(f"No VIF feature JSONs found in {features_dir}")
+
+    return vif_features
+
+
 def walk_forward_validation(
     assets_dict: dict[str, pl.DataFrame]
 ) -> tuple[dict[str, list[float]], dict[str, dict[str, list[dict[str, float]]]]]:
@@ -89,6 +103,8 @@ def walk_forward_validation(
     tickers = list(assets_dict.keys())
     reference_df = assets_dict[tickers[0]]
     test_indices = build_test_indices(reference_df)
+    features_dir = Path(__file__).resolve().parents[1] / "features"
+    vif_features = load_vif_pruned_features(features_dir)
 
     results: dict[str, list[float]] = {ticker: [] for ticker in tickers}
     weekly_importances: dict[str, list[list[dict[str, float]]]] = {
@@ -103,7 +119,22 @@ def walk_forward_validation(
 
     for week_idx, current_idx in enumerate(test_indices, start=1):
         for ticker, df in assets_dict.items():
-            feature_cols = get_feature_cols(df)
+            ticker_key = ticker.lower()
+            if ticker_key not in vif_features:
+                raise ValueError(
+                    f"Missing VIF features for {ticker} in {features_dir}"
+                )
+            week_key = f"week{week_idx}"
+            feature_cols = vif_features[ticker_key].get(week_key)
+            if not feature_cols:
+                raise ValueError(
+                    f"No VIF features for {ticker} {week_key}"
+                )
+            missing_cols = [col for col in feature_cols if col not in df.columns]
+            if missing_cols:
+                raise ValueError(
+                    f"Missing feature columns for {ticker} {week_key}: {missing_cols}"
+                )
             train_df = df.slice(0, current_idx)
             train_clean = train_df.filter(
                 pl.col("target_return_1w").is_not_null()

@@ -355,4 +355,4 @@ def main(weights_filename: str) -> None:
 
 
 if __name__ == "__main__":
-    main("weekly_weights")
+    main("weights_buy_and_hold")
