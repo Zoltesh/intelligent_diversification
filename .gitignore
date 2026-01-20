@@ -11,3 +11,4 @@ wheels/
 
 src/data_cleaned/
 src/features/*_features.json
+src/engineered_features/*.csv
