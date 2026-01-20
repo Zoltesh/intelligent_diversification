@@ -96,10 +96,25 @@ def write_weekly_vif_pruned_features(
             window_df = _get_history_slice(df, current_idx, weeks)
             feature_cols = resolved.get(week_key, [])
             if feature_cols:
-                selected_cols = list(feature_cols)
-                if "target_return_1w" in window_df.columns:
-                    selected_cols.append("target_return_1w")
-                window_df = window_df.select(selected_cols)
+                available_cols = [
+                    col for col in feature_cols if col in window_df.columns
+                ]
+                if not available_cols:
+                    print(
+                        f"Warning: no configured features found for "
+                        f"{symbol} {week_key}. Falling back to all features."
+                    )
+                else:
+                    missing = set(feature_cols) - set(available_cols)
+                    if missing:
+                        print(
+                            f"Warning: missing features for {symbol} "
+                            f"{week_key}: {sorted(missing)}"
+                        )
+                    selected_cols = list(available_cols)
+                    if "target_return_1w" in window_df.columns:
+                        selected_cols.append("target_return_1w")
+                    window_df = window_df.select(selected_cols)
 
             if "target_return_1w" in window_df.columns:
                 window_df = window_df.filter(

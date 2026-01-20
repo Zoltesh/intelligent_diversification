@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+src/data_cleaned/
+src/features/*_features.json

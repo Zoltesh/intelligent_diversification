@@ -3,6 +3,9 @@
 Technical indicators implementation.
 """
 
+import json
+from pathlib import Path
+
 import polars as pl
 import polars_talib as ptl
 
@@ -16,6 +19,7 @@ tf_map = {
 }
 
 BASE_TIMEFRAME = "5m"
+DEFAULT_CONFIG_PATH = Path(__file__).with_name("indicator_config.json")
 
 
 def _tf_factor(tf: str) -> int:
@@ -28,6 +32,24 @@ def _tf_factor(tf: str) -> int:
             f"Timeframe '{tf}' must be a multiple of {BASE_TIMEFRAME}"
         )
     return minutes // base_minutes
+
+
+def _validate_timeframes(timeframes: list[str]) -> None:
+    if not timeframes:
+        raise ValueError("timeframes must be a non-empty list")
+    for tf in timeframes:
+        _tf_factor(tf)
+
+
+def load_indicator_config(config_path: Path | str | None = None) -> dict:
+    path = Path(config_path) if config_path is not None else DEFAULT_CONFIG_PATH
+    if not path.exists():
+        raise FileNotFoundError(f"Indicator config not found: {path}")
+    with path.open("r", encoding="utf-8") as handle:
+        config = json.load(handle)
+    if not isinstance(config, dict) or "indicators" not in config:
+        raise ValueError("Config must be a dict with an 'indicators' key")
+    return config
 
 
 def add_adx(df: pl.DataFrame, tf: str, period: int) -> pl.DataFrame:
@@ -70,7 +92,7 @@ def add_bbands(
     period: int,
     nbdevup: float = 2.0,
     nbdevdn: float = 2.0,
-    matype: int = 0,
+    matype: int = 1,
 ) -> pl.DataFrame:
     # 1. Validation
     factor = _tf_factor(tf)
@@ -130,6 +152,94 @@ def add_macd(
         macd_expr.struct.field("macdsignal").alias(signal_col),
         macd_expr.struct.field("macdhist").alias(hist_col),
     )
+
+
+def add_ppo(
+    df: pl.DataFrame,
+    tf: str,
+    fastperiod: int = 12,
+    slowperiod: int = 26,
+    matype: int = 0,
+) -> pl.DataFrame:
+    # 1. Validation
+    factor = _tf_factor(tf)
+    if fastperiod <= 0 or slowperiod <= 0:
+        raise ValueError("periods must be positive integers")
+    if fastperiod >= slowperiod:
+        raise ValueError("fastperiod must be less than slowperiod")
+
+    effective_fast = fastperiod * factor
+    effective_slow = slowperiod * factor
+    ppo_expr = ptl.ppo(
+        pl.col("close"),
+        fastperiod=effective_fast,
+        slowperiod=effective_slow,
+        matype=matype,
+    )
+    col_name = f"ppo_{fastperiod}_{slowperiod}_{matype}_{tf}"
+    return df.with_columns(ppo_expr.alias(col_name))
+
+
+def add_aroon(df: pl.DataFrame, tf: str, period: int) -> pl.DataFrame:
+    # 1. Validation
+    factor = _tf_factor(tf)
+    if period <= 0:
+        raise ValueError("period must be a positive integer")
+
+    effective_period = period * factor
+    aroon_expr = ptl.aroon(
+        pl.col("high"),
+        pl.col("low"),
+        timeperiod=effective_period,
+    )
+    down_col = f"aroon_down_{period}_{tf}"
+    up_col = f"aroon_up_{period}_{tf}"
+    return df.with_columns(
+        aroon_expr.struct.field("aroondown").alias(down_col),
+        aroon_expr.struct.field("aroonup").alias(up_col),
+    )
+
+
+def add_kama(df: pl.DataFrame, tf: str, period: int) -> pl.DataFrame:
+    # 1. Validation
+    factor = _tf_factor(tf)
+    if period <= 0:
+        raise ValueError("period must be a positive integer")
+
+    effective_period = period * factor
+    kama_expr = ptl.kama(
+        pl.col("close"),
+        timeperiod=effective_period,
+    )
+    col_name = f"kama_{period}_{tf}"
+    return df.with_columns(kama_expr.alias(col_name))
+
+
+def add_adosc(
+    df: pl.DataFrame,
+    tf: str,
+    fastperiod: int = 3,
+    slowperiod: int = 10,
+) -> pl.DataFrame:
+    # 1. Validation
+    factor = _tf_factor(tf)
+    if fastperiod <= 0 or slowperiod <= 0:
+        raise ValueError("periods must be positive integers")
+    if fastperiod >= slowperiod:
+        raise ValueError("fastperiod must be less than slowperiod")
+
+    effective_fast = fastperiod * factor
+    effective_slow = slowperiod * factor
+    adosc_expr = ptl.adosc(
+        pl.col("high"),
+        pl.col("low"),
+        pl.col("close"),
+        pl.col("volume"),
+        fastperiod=effective_fast,
+        slowperiod=effective_slow,
+    )
+    col_name = f"adosc_{fastperiod}_{slowperiod}_{tf}"
+    return df.with_columns(adosc_expr.alias(col_name))
 
 
 def add_obv(df: pl.DataFrame, tf: str) -> pl.DataFrame:
@@ -300,67 +410,67 @@ def add_willr(df: pl.DataFrame, tf: str, period: int) -> pl.DataFrame:
     return df.with_columns(willr_expr.alias(col_name))
 
 
-def add_indicators(df: pl.DataFrame, tf: str, period: int) -> pl.DataFrame:
-    factor = _tf_factor(tf)
-    if period <= 0:
-        raise ValueError("period must be a positive integer")
+def add_indicators(
+    df: pl.DataFrame,
+    config_path: Path | str | None = None,
+) -> pl.DataFrame:
+    config = load_indicator_config(config_path)
+    indicators = config.get("indicators", {})
+    if not indicators:
+        raise ValueError("Config has no indicators defined")
 
-    effective_period = period * factor
+    registry = {
+        "adx": ("period", add_adx),
+        "atr": ("period", add_atr),
+        "bbands": ("params", add_bbands),
+        "macd": ("params", add_macd),
+        "ppo": ("params", add_ppo),
+        "obv": ("tf_only", add_obv),
+        "aroon": ("period", add_aroon),
+        "cci": ("period", add_cci),
+        "cmo": ("period", add_cmo),
+        "mom": ("period", add_mom),
+        "mfi": ("period", add_mfi),
+        "trix": ("period", add_trix),
+        "kama": ("period", add_kama),
+        "wma": ("period", add_wma),
+        "roc": ("period", add_roc),
+        "rsi": ("period", add_rsi),
+        "stoch": ("period", add_stoch),
+        "willr": ("period", add_willr),
+        "adosc": ("params", add_adosc),
+    }
 
-    return df.with_columns(
-        ptl.cci(
-            pl.col("high"),
-            pl.col("low"),
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"cci_{period}_{tf}"),
-        ptl.cmo(
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"cmo_{period}_{tf}"),
-        ptl.mom(
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"mom_{period}_{tf}"),
-        ptl.mfi(
-            pl.col("high"),
-            pl.col("low"),
-            pl.col("close"),
-            pl.col("volume"),
-            timeperiod=effective_period,
-        ).alias(f"mfi_{period}_{tf}"),
-        ptl.trix(
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"trix_{period}_{tf}"),
-        ptl.wma(
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"wma_{period}_{tf}"),
-        ptl.roc(
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"roc_{period}_{tf}"),
-        ptl.adx(
-            pl.col("high"),
-            pl.col("low"),
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"adx_{period}_{tf}"),
-        ptl.atr(
-            pl.col("high"),
-            pl.col("low"),
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"atr_{period}_{tf}"),
-        ptl.rsi(
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"rsi_{period}_{tf}"),
-        ptl.willr(
-            pl.col("high"),
-            pl.col("low"),
-            pl.col("close"),
-            timeperiod=effective_period,
-        ).alias(f"willr_{period}_{tf}"),
-    )
+    for name, settings in indicators.items():
+        if name not in registry:
+            raise ValueError(f"Unsupported indicator '{name}' in config")
+        if not isinstance(settings, dict):
+            raise ValueError(f"Indicator settings must be a dict: '{name}'")
+
+        mode, func = registry[name]
+        timeframes = settings.get("timeframes", [])
+        _validate_timeframes(timeframes)
+
+        if mode == "period":
+            periods = settings.get("periods", [])
+            if not periods:
+                raise ValueError(f"Indicator '{name}' requires 'periods'")
+            for tf in timeframes:
+                for period in periods:
+                    df = func(df=df, tf=tf, period=period)
+        elif mode == "params":
+            params_list = settings.get("params", [])
+            if not params_list:
+                raise ValueError(f"Indicator '{name}' requires 'params'")
+            for tf in timeframes:
+                for params in params_list:
+                    if not isinstance(params, dict):
+                        raise ValueError(
+                            f"Indicator '{name}' params must be dicts"
+                        )
+                    df = func(df=df, tf=tf, **params)
+        else:
+            for tf in timeframes:
+                df = func(df=df, tf=tf)
+
+    return df
