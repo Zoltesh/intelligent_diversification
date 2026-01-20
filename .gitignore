@@ -9,6 +9,6 @@ wheels/
 # Virtual environments
 .venv
 
-src/data_cleaned/
+*.parquet
+*.csv
 src/features/*_features.json
-src/engineered_features/*.csv
