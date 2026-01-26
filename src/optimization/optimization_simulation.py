@@ -13,6 +13,8 @@ import numpy as np
 import polars as pl
 from pypfopt import EfficientFrontier, objective_functions
 
+BASE_DIR = Path(__file__).resolve().parents[1]
+
 # --- CONFIGURATION ---
 START_TS_MS = 1735689600000  # 2025-01-01
 WEEKS = 52
@@ -23,6 +25,9 @@ MS_PER_WEEK = 7 * MS_PER_DAY
 # 0.25 = Max 25% per asset. 
 # Since we enforce this manually, it will never crash the solver.
 MAX_ASSET_WEIGHT = 0.25 
+DEFAULT_L2_GAMMA = 0.05
+DEFAULT_TXN_COST_K = 0.001
+DEFAULT_TURNOVER_CAP = 0.20
 
 
 def load_predictions(predictions_path: Path) -> Dict[str, List[float]]:
@@ -92,9 +97,17 @@ def compute_covariance(history_df: pl.DataFrame, annualization_factor: int) -> n
     returns = prices_only.select(
         [((pl.col(c) / pl.col(c).shift(1)) - 1).alias(c) for c in asset_cols]
     ).drop_nulls()
-    
+
+    if returns.height < 2:
+        return np.eye(len(asset_cols)) * 1e-6
+
     returns_matrix = returns.to_numpy()
+    if returns_matrix.ndim == 1:
+        returns_matrix = returns_matrix.reshape(-1, 1)
     cov_matrix = np.cov(returns_matrix, rowvar=False) * annualization_factor
+    if np.isscalar(cov_matrix):
+        cov_matrix = np.array([[cov_matrix]])
+    cov_matrix = np.nan_to_num(cov_matrix, nan=0.0, posinf=0.0, neginf=0.0)
     return cov_matrix
 
 
@@ -110,6 +123,15 @@ def normalize_weights(weights: Dict[str, float], symbols: List[str]) -> Dict[str
     return {s: float(weights.get(s, 0.0)) / total for s in symbols}
 
 
+def compute_investment_budget(weekly_preds: List[float]) -> float:
+    if not weekly_preds:
+        return 0.0
+    positive = sum(1 for pred in weekly_preds if pred > 0)
+    if positive == 0:
+        return 0.0
+    return positive / len(weekly_preds)
+
+
 def apply_weight_cap(weights: Dict[str, float], cap: float) -> Dict[str, float]:
     """
     The 'Human' Logic:
@@ -121,32 +143,87 @@ def apply_weight_cap(weights: Dict[str, float], cap: float) -> Dict[str, float]:
     if not weights:
         return {}
         
-    cleaned = weights.copy()
+    cleaned = normalize_weights(weights, list(weights.keys()))
     symbols = list(cleaned.keys())
-    
-    # We loop a few times to ensure redistribution doesn't push a small weight over the cap
-    for _ in range(10): 
-        # 1. Cap values
-        capped = {k: min(v, cap) for k, v in cleaned.items()}
-        
-        # 2. Renormalize (Distribute the missing %)
-        total = sum(capped.values())
-        if total <= 0: 
+
+    if cap <= 0:
+        return equal_weights(symbols)
+
+    min_feasible_cap = 1.0 / len(symbols)
+    if cap * len(symbols) < 1.0:
+        cap = min_feasible_cap
+
+    remaining = cleaned.copy()
+    remaining_budget = 1.0
+    weights_out: Dict[str, float] = {}
+
+    while remaining:
+        remaining_total = sum(remaining.values())
+        if remaining_total <= 0:
             return equal_weights(symbols)
-            
-        # Scale everything up so it sums to 1.0 again
-        cleaned = {k: v / total for k, v in capped.items()}
-        
-        # 3. Check if we are done (Are all <= cap?)
-        # We use a tiny epsilon (0.0001) for floating point tolerance
-        if all(v <= cap + 0.0001 for v in cleaned.values()):
-            return cleaned
-            
-    return cleaned
+
+        scaled = {
+            k: (v / remaining_total) * remaining_budget for k, v in remaining.items()
+        }
+        over = {k: v for k, v in scaled.items() if v > cap}
+
+        if not over:
+            weights_out.update(scaled)
+            break
+
+        for k in over:
+            weights_out[k] = cap
+            remaining_budget -= cap
+            remaining.pop(k, None)
+
+        if remaining_budget <= 0:
+            break
+
+    return normalize_weights(weights_out, symbols)
+
+
+def _build_frontier(
+    expected_returns: np.ndarray,
+    cov_matrix: np.ndarray,
+    prev_weights_array: np.ndarray,
+    symbols: List[str],
+    l2_gamma: float,
+    txn_cost_k: float,
+    turnover_cap: float | None,
+) -> EfficientFrontier:
+    ef = EfficientFrontier(expected_returns, cov_matrix, weight_bounds=(0.0, 1.0))
+    ef.tickers = symbols
+    ef.add_objective(objective_functions.L2_reg, gamma=l2_gamma)
+    if txn_cost_k > 0:
+        ef.add_objective(
+            objective_functions.transaction_cost, w_prev=prev_weights_array, k=txn_cost_k
+        )
+    if turnover_cap is not None and turnover_cap > 0:
+        ef.add_constraint(
+            lambda w: cp.sum(cp.abs(w - prev_weights_array)) <= turnover_cap
+        )
+    return ef
+
+
+def _solve_objective(ef: EfficientFrontier, objective: str) -> None:
+    if objective == "max_sharpe":
+        ef.max_sharpe(risk_free_rate=0.0)
+    elif objective == "min_volatility":
+        ef.min_volatility()
+    elif objective == "max_quadratic_utility":
+        ef.max_quadratic_utility(risk_aversion=1.0)
+    else:
+        raise ValueError(f"Unknown objective: {objective}")
 
 
 def run_simulation(
-    wide_df: pl.DataFrame, predictions: Dict[str, List[float]]
+    wide_df: pl.DataFrame,
+    predictions: Dict[str, List[float]],
+    *,
+    objective: str = "max_sharpe",
+    l2_gamma: float = DEFAULT_L2_GAMMA,
+    txn_cost_k: float = DEFAULT_TXN_COST_K,
+    turnover_cap: float = DEFAULT_TURNOVER_CAP,
 ) -> List[Dict[str, object]]:
     symbols = list(predictions.keys())
     history_df = wide_df.filter(pl.col("timestamp") < START_TS_MS)
@@ -164,6 +241,7 @@ def run_simulation(
         cov_matrix = compute_covariance(history_df, annualization_factor)
         raw_weekly_preds = [predictions[symbol][week_idx] for symbol in symbols]
         expected_returns = np.array(raw_weekly_preds, dtype=float) * 52
+        investment_budget = compute_investment_budget(raw_weekly_preds)
         if prev_weights is None:
             prev_weights_array = np.zeros(len(symbols), dtype=float)
         else:
@@ -176,84 +254,83 @@ def run_simulation(
             # We REMOVED the hard constraint (w <= 0.25).
             # We rely on L2_reg to discourage 100% allocation, but we let the solver
             # output whatever it wants (e.g. 60%) to ensure it finds a solution.
-            ef = EfficientFrontier(expected_returns, cov_matrix, weight_bounds=(0.0, 1.0))
-            ef.add_objective(objective_functions.L2_reg, gamma=0.1)
-            ef.add_objective(
-                objective_functions.transaction_cost, w_prev=prev_weights_array, k=0.001
-            )
-            ef.add_constraint(
-                lambda w: cp.sum(cp.abs(w - prev_weights_array)) <= 0.20
+            ef = _build_frontier(
+                expected_returns=expected_returns,
+                cov_matrix=cov_matrix,
+                prev_weights_array=prev_weights_array,
+                symbols=symbols,
+                l2_gamma=l2_gamma,
+                txn_cost_k=txn_cost_k,
+                turnover_cap=turnover_cap,
             )
 
             try:
-                ef.max_sharpe(risk_free_rate=0.0)
+                _solve_objective(ef, objective)
             except Exception as e:
                 if "infeasible" in str(e).lower():
-                    ef = EfficientFrontier(
-                        expected_returns, cov_matrix, weight_bounds=(0.0, 1.0)
+                    ef = _build_frontier(
+                        expected_returns=expected_returns,
+                        cov_matrix=cov_matrix,
+                        prev_weights_array=prev_weights_array,
+                        symbols=symbols,
+                        l2_gamma=l2_gamma,
+                        txn_cost_k=txn_cost_k,
+                        turnover_cap=None,
                     )
-                    ef.add_objective(objective_functions.L2_reg, gamma=0.1)
-                    ef.add_objective(
-                        objective_functions.transaction_cost,
-                        w_prev=prev_weights_array,
-                        k=0.001,
-                    )
-                    ef.max_sharpe(risk_free_rate=0.0)
+                    _solve_objective(ef, objective)
                 else:
                     raise
             
             cleaned_weights = ef.clean_weights(cutoff=0.01)
-            mapped_weights = {symbols[i]: w for i, w in cleaned_weights.items()}
             
             # --- STEP 2: HUMAN LOGIC (The Constraints) ---
             # Now we force the distribution logic you asked for.
-            weights = apply_weight_cap(mapped_weights, cap=MAX_ASSET_WEIGHT)
+            weights = apply_weight_cap(cleaned_weights, cap=MAX_ASSET_WEIGHT)
 
         except Exception as e:
             # Fallback for Bear Markets (when all returns are negative)
             print(f"Week {week_idx} Max Sharpe failed ({e}). Switching to Defensive Mode.")
             try:
-                ef_risk = EfficientFrontier(expected_returns, cov_matrix, weight_bounds=(0.0, 1.0))
-                ef_risk.add_objective(objective_functions.L2_reg, gamma=0.1)
-                ef_risk.add_objective(
-                    objective_functions.transaction_cost,
-                    w_prev=prev_weights_array,
-                    k=0.001,
-                )
-                ef_risk.add_constraint(
-                    lambda w: cp.sum(cp.abs(w - prev_weights_array)) <= 0.20
+                ef_risk = _build_frontier(
+                    expected_returns=expected_returns,
+                    cov_matrix=cov_matrix,
+                    prev_weights_array=prev_weights_array,
+                    symbols=symbols,
+                    l2_gamma=l2_gamma,
+                    txn_cost_k=txn_cost_k,
+                    turnover_cap=turnover_cap,
                 )
                 
                 try:
                     ef_risk.min_volatility()
                 except Exception as e2:
                     if "infeasible" in str(e2).lower():
-                        ef_risk = EfficientFrontier(
-                            expected_returns, cov_matrix, weight_bounds=(0.0, 1.0)
-                        )
-                        ef_risk.add_objective(objective_functions.L2_reg, gamma=0.1)
-                        ef_risk.add_objective(
-                            objective_functions.transaction_cost,
-                            w_prev=prev_weights_array,
-                            k=0.001,
+                        ef_risk = _build_frontier(
+                            expected_returns=expected_returns,
+                            cov_matrix=cov_matrix,
+                            prev_weights_array=prev_weights_array,
+                            symbols=symbols,
+                            l2_gamma=l2_gamma,
+                            txn_cost_k=txn_cost_k,
+                            turnover_cap=None,
                         )
                         ef_risk.min_volatility()
                     else:
                         raise
                 
                 cleaned_weights = ef_risk.clean_weights(cutoff=0.01)
-                mapped_weights = {symbols[i]: w for i, w in cleaned_weights.items()}
                 
                 # Apply same capping logic to defensive portfolio
-                weights = apply_weight_cap(mapped_weights, cap=MAX_ASSET_WEIGHT)
+                weights = apply_weight_cap(cleaned_weights, cap=MAX_ASSET_WEIGHT)
                 
             except Exception as e2:
                 print(f"Week {week_idx} Critical Failure. Using Equal Weights.")
                 if prev_weights:
-                    weights = normalize_weights(prev_weights, symbols)
+                    weights = {symbol: float(prev_weights.get(symbol, 0.0)) for symbol in symbols}
                 else:
                     weights = equal_weights(symbols)
 
+        weights = {symbol: weight * investment_budget for symbol, weight in weights.items()}
         results.append({"timestamp": week_start, "weights": weights})
         prev_weights = weights
 
@@ -273,12 +350,16 @@ def run_optimization(
     predictions_path: Path | None = None,
     data_dir: Path | None = None,
     results_dir: Path | None = None,
+    weights_filename: str = "weekly_weights",
+    objective: str = "max_sharpe",
+    l2_gamma: float = DEFAULT_L2_GAMMA,
+    txn_cost_k: float = DEFAULT_TXN_COST_K,
+    turnover_cap: float = DEFAULT_TURNOVER_CAP,
 ) -> List[Dict[str, object]]:
-    base_dir = Path(__file__).resolve().parents[1]
     predictions_path = predictions_path or (
-        base_dir / "ml_xgboost" / "results" / "weekly_predictions_2025.json"
+        BASE_DIR / "ml_xgboost" / "results" / "weekly_predictions_2025.json"
     )
-    data_dir = data_dir or (base_dir / "engineered_features")
+    data_dir = data_dir or (BASE_DIR / "engineered_features")
     results_dir = results_dir or (Path(__file__).resolve().parent / "results")
     results_dir.mkdir(parents=True, exist_ok=True)
 
@@ -289,9 +370,16 @@ def run_optimization(
         raise ValueError("Predictions must have 52 weeks.")
 
     wide_df, _ = load_wide_prices(data_dir, symbols)
-    results = run_simulation(wide_df, predictions)
+    results = run_simulation(
+        wide_df,
+        predictions,
+        objective=objective,
+        l2_gamma=l2_gamma,
+        txn_cost_k=txn_cost_k,
+        turnover_cap=turnover_cap,
+    )
 
-    output_path = results_dir / "weekly_weights.json"
+    output_path = results_dir / f"{weights_filename}.json"
     with output_path.open("w") as f:
         json.dump(results, f, indent=2)
     return results

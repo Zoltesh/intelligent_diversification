@@ -1,0 +1,112 @@
+{
+  "ADA": {
+    "N": 52,
+    "DirAcc": 0.5962,
+    "MAE": 0.1214,
+    "RMSE": 0.189,
+    "Bias": 0.0008,
+    "Corr": 0.24,
+    "PosPred%": 50.0,
+    "PosPredHit": 0.5769,
+    "NegPredHit": 0.6154
+  },
+  "AVAX": {
+    "N": 52,
+    "DirAcc": 0.4615,
+    "MAE": 0.1622,
+    "RMSE": 0.1968,
+    "Bias": 0.0436,
+    "Corr": -0.0542,
+    "PosPred%": 63.5,
+    "PosPredHit": 0.3939,
+    "NegPredHit": 0.5789
+  },
+  "BCH": {
+    "N": 52,
+    "DirAcc": 0.4808,
+    "MAE": 0.1147,
+    "RMSE": 0.1619,
+    "Bias": 0.0251,
+    "Corr": -0.156,
+    "PosPred%": 51.9,
+    "PosPredHit": 0.5926,
+    "NegPredHit": 0.36
+  },
+  "BTC": {
+    "N": 52,
+    "DirAcc": 0.5385,
+    "MAE": 0.0519,
+    "RMSE": 0.066,
+    "Bias": -0.0016,
+    "Corr": 0.191,
+    "PosPred%": 55.8,
+    "PosPredHit": 0.5172,
+    "NegPredHit": 0.5652
+  },
+  "DOGE": {
+    "N": 52,
+    "DirAcc": 0.6731,
+    "MAE": 0.1271,
+    "RMSE": 0.1691,
+    "Bias": 0.0106,
+    "Corr": 0.0344,
+    "PosPred%": 53.8,
+    "PosPredHit": 0.5357,
+    "NegPredHit": 0.8333
+  },
+  "ETH": {
+    "N": 52,
+    "DirAcc": 0.5385,
+    "MAE": 0.1194,
+    "RMSE": 0.1576,
+    "Bias": 0.0152,
+    "Corr": 0.0116,
+    "PosPred%": 50.0,
+    "PosPredHit": 0.5385,
+    "NegPredHit": 0.5385
+  },
+  "LINK": {
+    "N": 52,
+    "DirAcc": 0.5385,
+    "MAE": 0.1767,
+    "RMSE": 0.2429,
+    "Bias": 0.0487,
+    "Corr": 0.0354,
+    "PosPred%": 51.9,
+    "PosPredHit": 0.4815,
+    "NegPredHit": 0.6
+  },
+  "LTC": {
+    "N": 52,
+    "DirAcc": 0.5192,
+    "MAE": 0.0968,
+    "RMSE": 0.1284,
+    "Bias": 0.0016,
+    "Corr": 0.1259,
+    "PosPred%": 46.2,
+    "PosPredHit": 0.5,
+    "NegPredHit": 0.5357
+  },
+  "SOL": {
+    "N": 52,
+    "DirAcc": 0.5686,
+    "MAE": 0.1062,
+    "RMSE": 0.1341,
+    "Bias": 0.0235,
+    "Corr": 0.2507,
+    "PosPred%": 59.6,
+    "PosPredHit": 0.4839,
+    "NegPredHit": 0.6667
+  },
+  "XRP": {
+    "N": 52,
+    "DirAcc": 0.5385,
+    "MAE": 0.0982,
+    "RMSE": 0.136,
+    "Bias": 0.0046,
+    "Corr": 0.2911,
+    "PosPred%": 36.5,
+    "PosPredHit": 0.5263,
+    "NegPredHit": 0.5455
+  }
+}

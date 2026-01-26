@@ -208,6 +208,14 @@ class PortfolioSimulator:
                 symbol: _to_decimal(weights_raw.get(symbol, 0))
                 for symbol in self.symbols
             }
+            if any(weight < 0 for weight in target_weights.values()):
+                raise ValueError(f"Negative weight detected for timestamp {timestamp}.")
+            total_weight = sum(target_weights.values())
+            if total_weight > Decimal("1") + WEIGHT_EPS:
+                target_weights = {
+                    symbol: _safe_div(weight, total_weight)
+                    for symbol, weight in target_weights.items()
+                }
 
             prices = self._get_prices(timestamp)
             equity_before = self._compute_equity(prices)
