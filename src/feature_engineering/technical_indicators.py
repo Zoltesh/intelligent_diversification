@@ -414,6 +414,7 @@ def add_indicators(
     df: pl.DataFrame,
     config_path: Path | str | None = None,
 ) -> pl.DataFrame:
+    df = df.sort("timestamp")
     config = load_indicator_config(config_path)
     indicators = config.get("indicators", {})
     if not indicators:

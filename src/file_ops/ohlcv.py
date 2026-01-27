@@ -13,4 +13,4 @@ async def write_ohlcv(symbol: str, ohlcv: pl.LazyFrame):
 
 async def read_ohlcv(symbol: str) -> pl.LazyFrame:
     file_path = os.path.join(base_dir, f"{symbol}.parquet")
-    return pl.scan_parquet(file_path)
+    return pl.scan_parquet(file_path).sort("timestamp")

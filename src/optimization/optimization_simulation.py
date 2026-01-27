@@ -22,12 +22,11 @@ MS_PER_DAY = 86_400_000
 MS_PER_WEEK = 7 * MS_PER_DAY
 
 # CAP CONFIGURATION
-# 0.25 = Max 25% per asset. 
-# Since we enforce this manually, it will never crash the solver.
-MAX_ASSET_WEIGHT = 0.25 
-DEFAULT_L2_GAMMA = 0.05
-DEFAULT_TXN_COST_K = 0.001
-DEFAULT_TURNOVER_CAP = 0.20
+# 0.35 = Max 35% per asset. Allow more concentration on high-conviction picks.
+MAX_ASSET_WEIGHT = 0.35 
+DEFAULT_L2_GAMMA = 0.01  # Deviation from equal weights
+DEFAULT_TXN_COST_K = 0.00325  # Averaging Taker/Maker for Tier 2 on Coinbase Advanced
+DEFAULT_TURNOVER_CAP = 0.35
 
 
 def load_predictions(predictions_path: Path) -> Dict[str, List[float]]:
@@ -124,12 +123,28 @@ def normalize_weights(weights: Dict[str, float], symbols: List[str]) -> Dict[str
 
 
 def compute_investment_budget(weekly_preds: List[float]) -> float:
+    """
+    Compute investment budget based on prediction magnitude, not just count.
+    Returns 1.0 (fully invested) unless predictions are strongly negative.
+    """
     if not weekly_preds:
         return 0.0
-    positive = sum(1 for pred in weekly_preds if pred > 0)
-    if positive == 0:
+    
+    # Use magnitude-weighted approach
+    positive_sum = sum(max(0, pred) for pred in weekly_preds)
+    negative_sum = abs(sum(min(0, pred) for pred in weekly_preds))
+    total_magnitude = positive_sum + negative_sum
+    
+    if total_magnitude == 0:
         return 0.0
-    return positive / len(weekly_preds)
+    
+    # Budget scales with positive vs negative magnitude
+    # If positive_sum dominates, budget approaches 1.0
+    # If negative_sum dominates, budget approaches 0.0
+    budget = positive_sum / total_magnitude
+    
+    # Apply floor: minimum 60% invested unless predictions are very bearish
+    return max(0.6, budget) if budget > 0.3 else budget
 
 
 def apply_weight_cap(weights: Dict[str, float], cap: float) -> Dict[str, float]:
@@ -211,7 +226,7 @@ def _solve_objective(ef: EfficientFrontier, objective: str) -> None:
     elif objective == "min_volatility":
         ef.min_volatility()
     elif objective == "max_quadratic_utility":
-        ef.max_quadratic_utility(risk_aversion=1.0)
+        ef.max_quadratic_utility(risk_aversion=0.5)
     else:
         raise ValueError(f"Unknown objective: {objective}")
 
@@ -250,9 +265,8 @@ def run_simulation(
             )
 
         try:
-            # --- STEP 1: SOLVER (The Math) ---
-            # We REMOVED the hard constraint (w <= 0.25).
-            # We rely on L2_reg to discourage 100% allocation, but we let the solver
+            # --- STEP 1: SOLVER ---
+            # Rely on L2_reg to discourage 100% allocation, but let the solver
             # output whatever it wants (e.g. 60%) to ensure it finds a solution.
             ef = _build_frontier(
                 expected_returns=expected_returns,
@@ -283,8 +297,7 @@ def run_simulation(
             
             cleaned_weights = ef.clean_weights(cutoff=0.01)
             
-            # --- STEP 2: HUMAN LOGIC (The Constraints) ---
-            # Now we force the distribution logic you asked for.
+            # --- STEP 2: HUMAN-LIKE LOGIC ---
             weights = apply_weight_cap(cleaned_weights, cap=MAX_ASSET_WEIGHT)
 
         except Exception as e:

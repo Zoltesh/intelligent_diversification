@@ -96,14 +96,14 @@ class PortfolioSimulator:
             if not csv_path.exists():
                 raise FileNotFoundError(f"Missing data file: {csv_path}")
 
-            # CRITICAL FIX: Force prices to be read as Strings to avoid float conversion errors
+            # Force prices to be read as Strings to avoid float conversion errors
             # before they reach Decimal.
             df = pl.read_csv(
                 csv_path,
                 columns=["timestamp", "open", "close"],
                 schema_overrides={"open": pl.String, "close": pl.String},
             )
-            df = df.drop_nulls(subset=["timestamp", "open", "close"])
+            df = df.drop_nulls(subset=["timestamp", "open", "close"]).sort("timestamp")
 
             price_map: Dict[int, PricePoint] = {}
             for row in df.iter_rows(named=True):

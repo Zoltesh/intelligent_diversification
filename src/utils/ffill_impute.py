@@ -35,7 +35,7 @@ def ffill_impute(lf: pl.LazyFrame, every: str = "5m") -> tuple[pl.LazyFrame, int
 
     out = (
         joined.with_columns(
-            pl.col(VALUE_COLS).fill_null(strategy="forward")  # includes volume now
+            pl.col(VALUE_COLS).fill_null(strategy="forward")
         )
         .with_columns(pl.col("timestamp").dt.timestamp("ms").cast(pl.Int64()))
         .select(["timestamp", *VALUE_COLS])

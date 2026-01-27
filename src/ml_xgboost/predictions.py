@@ -41,7 +41,7 @@ def load_engineered_features(data_dir: Path) -> dict[str, pl.DataFrame]:
     assets_dict: dict[str, pl.DataFrame] = {}
     for csv_path in sorted(data_dir.glob("*_feature_df.csv")):
         ticker = csv_path.name.split("_feature_df.csv")[0]
-        assets_dict[ticker] = pl.read_csv(csv_path)
+        assets_dict[ticker] = pl.read_csv(csv_path).sort("timestamp")
     if not assets_dict:
         raise ValueError(f"No feature CSVs found in {data_dir}")
     return assets_dict
