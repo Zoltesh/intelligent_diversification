@@ -16,7 +16,7 @@ import polars as pl
 getcontext().prec = 28
 
 INITIAL_CAPITAL = Decimal("10000")
-TRADING_FEE_RATE = Decimal("0.001")
+TRADING_FEE_RATE = Decimal("0.00325")  # 0.325% per trade (Coinbase Advanced Tier 2)
 PCT_PLACES = Decimal("0.000001")
 WEIGHT_PLACES = Decimal("0.000001")
 MONEY_PLACES = Decimal("0.01")

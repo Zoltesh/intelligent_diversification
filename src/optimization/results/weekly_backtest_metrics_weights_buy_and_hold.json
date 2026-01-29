@@ -5,10 +5,10 @@
       "week_number": 1,
       "portfolio": {
         "start_value": "10000.00",
-        "end_value": "10657.05",
-        "gross_return_pct": "0.066705",
-        "net_return_pct": "0.065705",
-        "total_fees": "10.00",
+        "end_value": "10633.05",
+        "gross_return_pct": "0.066555",
+        "net_return_pct": "0.063305",
+        "total_fees": "32.50",
         "turnover_pct": "1.000000",
         "drawdown_pct": "0.000000"
       },
@@ -16,80 +16,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "172.72",
+          "allocated_value": "996.75",
+          "pnl_usd": "172.33",
           "return_pct": "0.172892",
           "contribution_pct": "0.017289"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "99.82",
+          "allocated_value": "996.75",
+          "pnl_usd": "99.59",
           "return_pct": "0.099916",
           "contribution_pct": "0.009992"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "8.97",
+          "allocated_value": "996.75",
+          "pnl_usd": "8.95",
           "return_pct": "0.008982",
           "contribution_pct": "0.000898"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "38.47",
+          "allocated_value": "996.75",
+          "pnl_usd": "38.38",
           "return_pct": "0.038505",
           "contribution_pct": "0.003851"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "103.33",
+          "allocated_value": "996.75",
+          "pnl_usd": "103.10",
           "return_pct": "0.103434",
           "contribution_pct": "0.010343"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "14.94",
+          "allocated_value": "996.75",
+          "pnl_usd": "14.90",
           "return_pct": "0.014953",
           "contribution_pct": "0.001495"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "70.21",
+          "allocated_value": "996.75",
+          "pnl_usd": "70.06",
           "return_pct": "0.070284",
           "contribution_pct": "0.007028"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "-3.68",
+          "allocated_value": "996.75",
+          "pnl_usd": "-3.67",
           "return_pct": "-0.003687",
           "contribution_pct": "-0.000369"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "70.42",
+          "allocated_value": "996.75",
+          "pnl_usd": "70.26",
           "return_pct": "0.070490",
           "contribution_pct": "0.007049"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.000000",
-          "allocated_value": "999.00",
-          "pnl_usd": "91.85",
+          "allocated_value": "996.75",
+          "pnl_usd": "91.65",
           "return_pct": "0.091945",
           "contribution_pct": "0.009195"
         }
@@ -99,8 +99,8 @@
       "timestamp": 1736294400000,
       "week_number": 2,
       "portfolio": {
-        "start_value": "10657.05",
-        "end_value": "10625.79",
+        "start_value": "10633.05",
+        "end_value": "10601.86",
         "gross_return_pct": "-0.002933",
         "net_return_pct": "-0.002933",
         "total_fees": "0.00",
@@ -111,80 +111,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.109948",
-          "allocated_value": "1065.70",
-          "pnl_usd": "115.14",
+          "allocated_value": "1063.30",
+          "pnl_usd": "114.88",
           "return_pct": "0.007785",
           "contribution_pct": "0.000778"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103107",
-          "allocated_value": "1065.70",
-          "pnl_usd": "-40.63",
+          "allocated_value": "1063.30",
+          "pnl_usd": "-40.54",
           "return_pct": "-0.067109",
           "contribution_pct": "-0.006711"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094583",
-          "allocated_value": "1065.70",
-          "pnl_usd": "-56.28",
+          "allocated_value": "1063.30",
+          "pnl_usd": "-56.15",
           "return_pct": "0.001442",
           "contribution_pct": "0.000144"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097350",
-          "allocated_value": "1065.70",
-          "pnl_usd": "-32.59",
+          "allocated_value": "1063.30",
+          "pnl_usd": "-32.52",
           "return_pct": "-0.004198",
           "contribution_pct": "-0.000420"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103437",
-          "allocated_value": "1065.70",
-          "pnl_usd": "61.33",
+          "allocated_value": "1063.30",
+          "pnl_usd": "61.20",
           "return_pct": "0.022414",
           "contribution_pct": "0.002241"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095142",
-          "allocated_value": "1065.70",
-          "pnl_usd": "-98.55",
+          "allocated_value": "1063.30",
+          "pnl_usd": "-98.33",
           "return_pct": "-0.046141",
           "contribution_pct": "-0.004614"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100329",
-          "allocated_value": "1065.70",
-          "pnl_usd": "-48.70",
+          "allocated_value": "1063.30",
+          "pnl_usd": "-48.59",
           "return_pct": "-0.048831",
           "contribution_pct": "-0.004883"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093395",
-          "allocated_value": "1065.70",
-          "pnl_usd": "-72.91",
+          "allocated_value": "1063.30",
+          "pnl_usd": "-72.74",
           "return_pct": "-0.002532",
           "contribution_pct": "-0.000253"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100349",
-          "allocated_value": "1065.70",
-          "pnl_usd": "-73.74",
+          "allocated_value": "1063.30",
+          "pnl_usd": "-73.58",
           "return_pct": "-0.072429",
           "contribution_pct": "-0.007243"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.102360",
-          "allocated_value": "1065.70",
-          "pnl_usd": "215.68",
+          "allocated_value": "1063.30",
+          "pnl_usd": "215.19",
           "return_pct": "0.174660",
           "contribution_pct": "0.017466"
         }
@@ -194,8 +194,8 @@
       "timestamp": 1736899200000,
       "week_number": 3,
       "portfolio": {
-        "start_value": "10625.79",
-        "end_value": "11907.02",
+        "start_value": "10601.86",
+        "end_value": "11880.20",
         "gross_return_pct": "0.120577",
         "net_return_pct": "0.120577",
         "total_fees": "0.00",
@@ -206,80 +206,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111130",
-          "allocated_value": "1062.58",
-          "pnl_usd": "129.28",
+          "allocated_value": "1060.19",
+          "pnl_usd": "128.99",
           "return_pct": "0.009330",
           "contribution_pct": "0.000933"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.096471",
-          "allocated_value": "1062.58",
-          "pnl_usd": "-26.57",
+          "allocated_value": "1060.19",
+          "pnl_usd": "-26.51",
           "return_pct": "0.010667",
           "contribution_pct": "0.001067"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094998",
-          "allocated_value": "1062.58",
-          "pnl_usd": "-33.20",
+          "allocated_value": "1060.19",
+          "pnl_usd": "-33.12",
           "return_pct": "0.019767",
           "contribution_pct": "0.001977"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097227",
-          "allocated_value": "1062.58",
-          "pnl_usd": "73.53",
+          "allocated_value": "1060.19",
+          "pnl_usd": "73.36",
           "return_pct": "0.099698",
           "contribution_pct": "0.009970"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106066",
-          "allocated_value": "1062.58",
-          "pnl_usd": "115.52",
+          "allocated_value": "1060.19",
+          "pnl_usd": "115.26",
           "return_pct": "0.045308",
           "contribution_pct": "0.004531"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091019",
-          "allocated_value": "1062.58",
-          "pnl_usd": "-64.47",
+          "allocated_value": "1060.19",
+          "pnl_usd": "-64.32",
           "return_pct": "0.032010",
           "contribution_pct": "0.003201"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095711",
-          "allocated_value": "1062.58",
-          "pnl_usd": "270.49",
+          "allocated_value": "1060.19",
+          "pnl_usd": "269.88",
           "return_pct": "0.310779",
           "contribution_pct": "0.031078"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093433",
-          "allocated_value": "1062.58",
-          "pnl_usd": "92.18",
+          "allocated_value": "1060.19",
+          "pnl_usd": "91.97",
           "return_pct": "0.163136",
           "contribution_pct": "0.016314"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093354",
-          "allocated_value": "1062.58",
-          "pnl_usd": "261.86",
+          "allocated_value": "1060.19",
+          "pnl_usd": "261.27",
           "return_pct": "0.335165",
           "contribution_pct": "0.033516"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.120592",
-          "allocated_value": "1062.58",
-          "pnl_usd": "462.61",
+          "allocated_value": "1060.19",
+          "pnl_usd": "461.57",
           "return_pct": "0.190267",
           "contribution_pct": "0.019027"
         }
@@ -289,8 +289,8 @@
       "timestamp": 1737504000000,
       "week_number": 4,
       "portfolio": {
-        "start_value": "11907.02",
-        "end_value": "10810.84",
+        "start_value": "11880.20",
+        "end_value": "10786.50",
         "gross_return_pct": "-0.092061",
         "net_return_pct": "-0.092061",
         "total_fees": "0.00",
@@ -301,80 +301,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100097",
-          "allocated_value": "1190.70",
-          "pnl_usd": "-105.58",
+          "allocated_value": "1188.02",
+          "pnl_usd": "-105.34",
           "return_pct": "-0.089554",
           "contribution_pct": "-0.008955"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087008",
-          "allocated_value": "1190.70",
-          "pnl_usd": "-291.24",
+          "allocated_value": "1188.02",
+          "pnl_usd": "-290.58",
           "return_pct": "-0.131800",
           "contribution_pct": "-0.013180"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.086452",
-          "allocated_value": "1190.70",
-          "pnl_usd": "-244.18",
+          "allocated_value": "1188.02",
+          "pnl_usd": "-243.63",
           "return_pct": "-0.080493",
           "contribution_pct": "-0.008049"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095415",
-          "allocated_value": "1190.70",
-          "pnl_usd": "-106.70",
+          "allocated_value": "1188.02",
+          "pnl_usd": "-106.46",
           "return_pct": "-0.045867",
           "contribution_pct": "-0.004587"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.098942",
-          "allocated_value": "1190.70",
-          "pnl_usd": "-181.57",
+          "allocated_value": "1188.02",
+          "pnl_usd": "-181.16",
           "return_pct": "-0.143422",
           "contribution_pct": "-0.014342"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.083826",
-          "allocated_value": "1190.70",
-          "pnl_usd": "-268.03",
+          "allocated_value": "1188.02",
+          "pnl_usd": "-267.43",
           "return_pct": "-0.075584",
           "contribution_pct": "-0.007558"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111956",
-          "allocated_value": "1190.70",
-          "pnl_usd": "-60.23",
+          "allocated_value": "1188.02",
+          "pnl_usd": "-60.09",
           "return_pct": "-0.151973",
           "contribution_pct": "-0.015197"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.096981",
-          "allocated_value": "1190.70",
-          "pnl_usd": "-125.79",
+          "allocated_value": "1188.02",
+          "pnl_usd": "-125.51",
           "return_pct": "-0.077808",
           "contribution_pct": "-0.007781"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111231",
-          "allocated_value": "1190.70",
-          "pnl_usd": "9.82",
+          "allocated_value": "1188.02",
+          "pnl_usd": "9.80",
           "return_pct": "-0.093557",
           "contribution_pct": "-0.009356"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.128091",
-          "allocated_value": "1190.70",
-          "pnl_usd": "277.32",
+          "allocated_value": "1188.02",
+          "pnl_usd": "276.69",
           "return_pct": "-0.037483",
           "contribution_pct": "-0.003748"
         }
@@ -384,8 +384,8 @@
       "timestamp": 1738108800000,
       "week_number": 5,
       "portfolio": {
-        "start_value": "10810.84",
-        "end_value": "9374.86",
+        "start_value": "10786.50",
+        "end_value": "9353.75",
         "gross_return_pct": "-0.132828",
         "net_return_pct": "-0.132828",
         "total_fees": "0.00",
@@ -396,80 +396,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100374",
-          "allocated_value": "1081.08",
-          "pnl_usd": "-199.48",
+          "allocated_value": "1078.65",
+          "pnl_usd": "-199.03",
           "return_pct": "-0.187555",
           "contribution_pct": "-0.018755"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.083200",
-          "allocated_value": "1081.08",
-          "pnl_usd": "-338.63",
+          "allocated_value": "1078.65",
+          "pnl_usd": "-337.87",
           "return_pct": "-0.174564",
           "contribution_pct": "-0.017456"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087553",
-          "allocated_value": "1081.08",
-          "pnl_usd": "-319.84",
+          "allocated_value": "1078.65",
+          "pnl_usd": "-319.12",
           "return_pct": "-0.195745",
           "contribution_pct": "-0.019574"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100270",
-          "allocated_value": "1081.08",
-          "pnl_usd": "-34.49",
+          "allocated_value": "1078.65",
+          "pnl_usd": "-34.41",
           "return_pct": "-0.034504",
           "contribution_pct": "-0.003450"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093345",
-          "allocated_value": "1081.08",
-          "pnl_usd": "-246.11",
+          "allocated_value": "1078.65",
+          "pnl_usd": "-245.55",
           "return_pct": "-0.172584",
           "contribution_pct": "-0.017258"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.085347",
-          "allocated_value": "1081.08",
-          "pnl_usd": "-261.59",
+          "allocated_value": "1078.65",
+          "pnl_usd": "-261.00",
           "return_pct": "-0.111825",
           "contribution_pct": "-0.011183"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104569",
-          "allocated_value": "1081.08",
-          "pnl_usd": "-81.43",
+          "allocated_value": "1078.65",
+          "pnl_usd": "-81.25",
           "return_pct": "-0.115727",
           "contribution_pct": "-0.011573"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.098504",
-          "allocated_value": "1081.08",
-          "pnl_usd": "-100.69",
+          "allocated_value": "1078.65",
+          "pnl_usd": "-100.47",
           "return_pct": "-0.079367",
           "contribution_pct": "-0.007937"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111048",
-          "allocated_value": "1081.08",
-          "pnl_usd": "12.67",
+          "allocated_value": "1078.65",
+          "pnl_usd": "12.64",
           "return_pct": "-0.088934",
           "contribution_pct": "-0.008893"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.135791",
-          "allocated_value": "1081.08",
-          "pnl_usd": "133.62",
+          "allocated_value": "1078.65",
+          "pnl_usd": "133.32",
           "return_pct": "-0.172557",
           "contribution_pct": "-0.017256"
         }
@@ -479,8 +479,8 @@
       "timestamp": 1738713600000,
       "week_number": 6,
       "portfolio": {
-        "start_value": "9374.86",
-        "end_value": "9298.27",
+        "start_value": "9353.75",
+        "end_value": "9277.33",
         "gross_return_pct": "-0.008170",
         "net_return_pct": "-0.008170",
         "total_fees": "0.00",
@@ -491,80 +491,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094039",
-          "allocated_value": "937.49",
-          "pnl_usd": "-15.72",
+          "allocated_value": "935.37",
+          "pnl_usd": "-15.69",
           "return_pct": "0.045552",
           "contribution_pct": "0.004555"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.079196",
-          "allocated_value": "937.49",
-          "pnl_usd": "-226.16",
+          "allocated_value": "935.37",
+          "pnl_usd": "-225.65",
           "return_pct": "-0.041918",
           "contribution_pct": "-0.004192"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.081201",
-          "allocated_value": "937.49",
-          "pnl_usd": "-173.54",
+          "allocated_value": "935.37",
+          "pnl_usd": "-173.15",
           "return_pct": "0.003545",
           "contribution_pct": "0.000355"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111639",
-          "allocated_value": "937.49",
-          "pnl_usd": "87.45",
+          "allocated_value": "935.37",
+          "pnl_usd": "87.25",
           "return_pct": "-0.020697",
           "contribution_pct": "-0.002070"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089065",
-          "allocated_value": "937.49",
-          "pnl_usd": "-135.93",
+          "allocated_value": "935.37",
+          "pnl_usd": "-135.62",
           "return_pct": "-0.040024",
           "contribution_pct": "-0.004002"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087414",
-          "allocated_value": "937.49",
-          "pnl_usd": "-156.98",
+          "allocated_value": "935.37",
+          "pnl_usd": "-156.63",
           "return_pct": "-0.047579",
           "contribution_pct": "-0.004758"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106631",
-          "allocated_value": "937.49",
-          "pnl_usd": "-5.15",
+          "allocated_value": "935.37",
+          "pnl_usd": "-5.14",
           "return_pct": "-0.067337",
           "contribution_pct": "-0.006734"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104577",
-          "allocated_value": "937.49",
-          "pnl_usd": "218.34",
+          "allocated_value": "935.37",
+          "pnl_usd": "217.85",
           "return_pct": "0.178942",
           "contribution_pct": "0.017894"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.116669",
-          "allocated_value": "937.49",
-          "pnl_usd": "109.77",
+          "allocated_value": "935.37",
+          "pnl_usd": "109.52",
           "return_pct": "-0.042519",
           "contribution_pct": "-0.004252"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.129570",
-          "allocated_value": "937.49",
-          "pnl_usd": "221.34",
+          "allocated_value": "935.37",
+          "pnl_usd": "220.85",
           "return_pct": "-0.045996",
           "contribution_pct": "-0.004600"
         }
@@ -574,8 +574,8 @@
       "timestamp": 1739318400000,
       "week_number": 7,
       "portfolio": {
-        "start_value": "9298.27",
-        "end_value": "9177.75",
+        "start_value": "9277.33",
+        "end_value": "9157.08",
         "gross_return_pct": "-0.012962",
         "net_return_pct": "-0.012962",
         "total_fees": "0.00",
@@ -586,80 +586,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.099133",
-          "allocated_value": "929.83",
-          "pnl_usd": "-36.73",
+          "allocated_value": "927.73",
+          "pnl_usd": "-36.65",
           "return_pct": "-0.031101",
           "contribution_pct": "-0.003110"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.076501",
-          "allocated_value": "929.83",
-          "pnl_usd": "-270.37",
+          "allocated_value": "927.73",
+          "pnl_usd": "-269.76",
           "return_pct": "-0.072921",
           "contribution_pct": "-0.007292"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.082160",
-          "allocated_value": "929.83",
-          "pnl_usd": "-200.60",
+          "allocated_value": "927.73",
+          "pnl_usd": "-200.15",
           "return_pct": "-0.045444",
           "contribution_pct": "-0.004544"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.110229",
-          "allocated_value": "929.83",
-          "pnl_usd": "93.42",
+          "allocated_value": "927.73",
+          "pnl_usd": "93.21",
           "return_pct": "-0.001650",
           "contribution_pct": "-0.000165"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.086205",
-          "allocated_value": "929.83",
-          "pnl_usd": "-134.00",
+          "allocated_value": "927.73",
+          "pnl_usd": "-133.70",
           "return_pct": "-0.007153",
           "contribution_pct": "-0.000715"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.083941",
-          "allocated_value": "929.83",
-          "pnl_usd": "-128.78",
+          "allocated_value": "927.73",
+          "pnl_usd": "-128.49",
           "return_pct": "0.026321",
           "contribution_pct": "0.002632"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100270",
-          "allocated_value": "929.83",
-          "pnl_usd": "-36.70",
+          "allocated_value": "927.73",
+          "pnl_usd": "-36.62",
           "return_pct": "-0.042053",
           "contribution_pct": "-0.004205"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124305",
-          "allocated_value": "929.83",
-          "pnl_usd": "326.99",
+          "allocated_value": "927.73",
+          "pnl_usd": "326.26",
           "return_pct": "0.087379",
           "contribution_pct": "0.008738"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.112629",
-          "allocated_value": "929.83",
-          "pnl_usd": "-34.47",
+          "allocated_value": "927.73",
+          "pnl_usd": "-34.40",
           "return_pct": "-0.145044",
           "contribution_pct": "-0.014504"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124629",
-          "allocated_value": "929.83",
-          "pnl_usd": "300.73",
+          "allocated_value": "927.73",
+          "pnl_usd": "300.05",
           "return_pct": "0.061894",
           "contribution_pct": "0.006189"
         }
@@ -669,8 +669,8 @@
       "timestamp": 1739923200000,
       "week_number": 8,
       "portfolio": {
-        "start_value": "9177.75",
-        "end_value": "8212.31",
+        "start_value": "9157.08",
+        "end_value": "8193.81",
         "gross_return_pct": "-0.105193",
         "net_return_pct": "-0.105193",
         "total_fees": "0.00",
@@ -681,80 +681,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097311",
-          "allocated_value": "917.77",
-          "pnl_usd": "-109.26",
+          "allocated_value": "915.71",
+          "pnl_usd": "-109.02",
           "return_pct": "-0.094708",
           "contribution_pct": "-0.009471"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.071854",
-          "allocated_value": "917.77",
-          "pnl_usd": "-302.90",
+          "allocated_value": "915.71",
+          "pnl_usd": "-302.22",
           "return_pct": "-0.067602",
           "contribution_pct": "-0.006760"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.079456",
-          "allocated_value": "917.77",
-          "pnl_usd": "-245.69",
+          "allocated_value": "915.71",
+          "pnl_usd": "-245.13",
           "return_pct": "-0.078354",
           "contribution_pct": "-0.007835"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111492",
-          "allocated_value": "917.77",
-          "pnl_usd": "30.24",
+          "allocated_value": "915.71",
+          "pnl_usd": "30.17",
           "return_pct": "-0.073523",
           "contribution_pct": "-0.007352"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.086712",
-          "allocated_value": "917.77",
-          "pnl_usd": "-247.96",
+          "allocated_value": "915.71",
+          "pnl_usd": "-247.40",
           "return_pct": "-0.158341",
           "contribution_pct": "-0.015834"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087281",
-          "allocated_value": "917.77",
-          "pnl_usd": "-170.13",
+          "allocated_value": "915.71",
+          "pnl_usd": "-169.75",
           "return_pct": "-0.066664",
           "contribution_pct": "-0.006666"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097315",
-          "allocated_value": "917.77",
-          "pnl_usd": "-152.87",
+          "allocated_value": "915.71",
+          "pnl_usd": "-152.53",
           "return_pct": "-0.143569",
           "contribution_pct": "-0.014357"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.136942",
-          "allocated_value": "917.77",
-          "pnl_usd": "191.43",
+          "allocated_value": "915.71",
+          "pnl_usd": "191.00",
           "return_pct": "-0.117452",
           "contribution_pct": "-0.011745"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097557",
-          "allocated_value": "917.77",
-          "pnl_usd": "-155.01",
+          "allocated_value": "915.71",
+          "pnl_usd": "-154.66",
           "return_pct": "-0.148082",
           "contribution_pct": "-0.014808"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.134080",
-          "allocated_value": "917.77",
-          "pnl_usd": "196.71",
+          "allocated_value": "915.71",
+          "pnl_usd": "196.27",
           "return_pct": "-0.094320",
           "contribution_pct": "-0.009432"
         }
@@ -764,8 +764,8 @@
       "timestamp": 1740528000000,
       "week_number": 9,
       "portfolio": {
-        "start_value": "8212.31",
-        "end_value": "8321.75",
+        "start_value": "8193.81",
+        "end_value": "8303.01",
         "gross_return_pct": "0.013327",
         "net_return_pct": "0.013327",
         "total_fees": "0.00",
@@ -776,80 +776,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.098451",
-          "allocated_value": "821.23",
-          "pnl_usd": "292.92",
+          "allocated_value": "819.38",
+          "pnl_usd": "292.26",
           "return_pct": "0.378022",
           "contribution_pct": "0.037802"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.074873",
-          "allocated_value": "821.23",
-          "pnl_usd": "-260.75",
+          "allocated_value": "819.38",
+          "pnl_usd": "-260.16",
           "return_pct": "-0.088463",
           "contribution_pct": "-0.008846"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.081839",
-          "allocated_value": "821.23",
-          "pnl_usd": "-81.53",
+          "allocated_value": "819.38",
+          "pnl_usd": "-81.35",
           "return_pct": "0.100597",
           "contribution_pct": "0.010060"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.115438",
-          "allocated_value": "821.23",
-          "pnl_usd": "112.49",
+          "allocated_value": "819.38",
+          "pnl_usd": "112.24",
           "return_pct": "-0.015073",
           "contribution_pct": "-0.001507"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.081562",
-          "allocated_value": "821.23",
-          "pnl_usd": "-190.86",
+          "allocated_value": "819.38",
+          "pnl_usd": "-190.43",
           "return_pct": "-0.058879",
           "contribution_pct": "-0.005888"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091040",
-          "allocated_value": "821.23",
-          "pnl_usd": "-170.03",
+          "allocated_value": "819.38",
+          "pnl_usd": "-169.65",
           "return_pct": "-0.129001",
           "contribution_pct": "-0.012900"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093141",
-          "allocated_value": "821.23",
-          "pnl_usd": "-78.13",
+          "allocated_value": "819.38",
+          "pnl_usd": "-77.96",
           "return_pct": "-0.028506",
           "contribution_pct": "-0.002851"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.135066",
-          "allocated_value": "821.23",
-          "pnl_usd": "183.10",
+          "allocated_value": "819.38",
+          "pnl_usd": "182.69",
           "return_pct": "-0.094547",
           "contribution_pct": "-0.009455"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.092881",
-          "allocated_value": "821.23",
-          "pnl_usd": "-55.39",
+          "allocated_value": "819.38",
+          "pnl_usd": "-55.27",
           "return_pct": "0.004023",
           "contribution_pct": "0.000402"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.135710",
-          "allocated_value": "821.23",
-          "pnl_usd": "357.63",
+          "allocated_value": "819.38",
+          "pnl_usd": "356.83",
           "return_pct": "0.057761",
           "contribution_pct": "0.005776"
         }
@@ -859,8 +859,8 @@
       "timestamp": 1741132800000,
       "week_number": 10,
       "portfolio": {
-        "start_value": "8321.75",
-        "end_value": "7357.30",
+        "start_value": "8303.01",
+        "end_value": "7340.73",
         "gross_return_pct": "-0.115895",
         "net_return_pct": "-0.115895",
         "total_fees": "0.00",
@@ -871,80 +871,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.133884",
-          "allocated_value": "832.18",
-          "pnl_usd": "25.26",
+          "allocated_value": "830.30",
+          "pnl_usd": "25.20",
           "return_pct": "-0.230409",
           "contribution_pct": "-0.023041"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.067352",
-          "allocated_value": "832.18",
-          "pnl_usd": "-340.95",
+          "allocated_value": "830.30",
+          "pnl_usd": "-340.18",
           "return_pct": "-0.123562",
           "contribution_pct": "-0.012356"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088888",
-          "allocated_value": "832.18",
-          "pnl_usd": "-47.54",
+          "allocated_value": "830.30",
+          "pnl_usd": "-47.43",
           "return_pct": "0.060748",
           "contribution_pct": "0.006075"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.112203",
-          "allocated_value": "832.18",
-          "pnl_usd": "55.14",
+          "allocated_value": "830.30",
+          "pnl_usd": "55.02",
           "return_pct": "-0.049699",
           "contribution_pct": "-0.004970"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.075750",
-          "allocated_value": "832.18",
-          "pnl_usd": "-310.99",
+          "allocated_value": "830.30",
+          "pnl_usd": "-310.29",
           "return_pct": "-0.173216",
           "contribution_pct": "-0.017322"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.078253",
-          "allocated_value": "832.18",
-          "pnl_usd": "-255.36",
+          "allocated_value": "830.30",
+          "pnl_usd": "-254.78",
           "return_pct": "-0.114224",
           "contribution_pct": "-0.011422"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089296",
-          "allocated_value": "832.18",
-          "pnl_usd": "-175.39",
+          "allocated_value": "830.30",
+          "pnl_usd": "-175.00",
           "return_pct": "-0.116159",
           "contribution_pct": "-0.011616"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.120687",
-          "allocated_value": "832.18",
-          "pnl_usd": "44.22",
+          "allocated_value": "830.30",
+          "pnl_usd": "44.12",
           "return_pct": "-0.127389",
           "contribution_pct": "-0.012739"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.092028",
-          "allocated_value": "832.18",
-          "pnl_usd": "-169.14",
+          "allocated_value": "830.30",
+          "pnl_usd": "-168.76",
           "return_pct": "-0.134231",
           "contribution_pct": "-0.013423"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.141660",
-          "allocated_value": "832.18",
-          "pnl_usd": "210.30",
+          "allocated_value": "830.30",
+          "pnl_usd": "209.83",
           "return_pct": "-0.115693",
           "contribution_pct": "-0.011569"
         }
@@ -954,8 +954,8 @@
       "timestamp": 1741737600000,
       "week_number": 11,
       "portfolio": {
-        "start_value": "7357.30",
-        "end_value": "7461.68",
+        "start_value": "7340.73",
+        "end_value": "7444.88",
         "gross_return_pct": "0.014187",
         "net_return_pct": "0.014187",
         "total_fees": "0.00",
@@ -966,80 +966,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.116542",
-          "allocated_value": "735.73",
-          "pnl_usd": "95.41",
+          "allocated_value": "734.07",
+          "pnl_usd": "95.19",
           "return_pct": "-0.030671",
           "contribution_pct": "-0.003067"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.066768",
-          "allocated_value": "735.73",
-          "pnl_usd": "-203.85",
+          "allocated_value": "734.07",
+          "pnl_usd": "-203.39",
           "return_pct": "0.082763",
           "contribution_pct": "0.008276"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106647",
-          "allocated_value": "735.73",
-          "pnl_usd": "37.72",
+          "allocated_value": "734.07",
+          "pnl_usd": "37.63",
           "return_pct": "-0.014258",
           "contribution_pct": "-0.001426"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.120604",
-          "allocated_value": "735.73",
-          "pnl_usd": "149.31",
+          "allocated_value": "734.07",
+          "pnl_usd": "148.98",
           "return_pct": "-0.002560",
           "contribution_pct": "-0.000256"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.070839",
-          "allocated_value": "735.73",
-          "pnl_usd": "-203.62",
+          "allocated_value": "734.07",
+          "pnl_usd": "-203.16",
           "return_pct": "0.020969",
           "contribution_pct": "0.002097"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.078400",
-          "allocated_value": "735.73",
-          "pnl_usd": "-156.45",
+          "allocated_value": "734.07",
+          "pnl_usd": "-156.10",
           "return_pct": "0.004275",
           "contribution_pct": "0.000427"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089269",
-          "allocated_value": "735.73",
-          "pnl_usd": "-39.79",
+          "allocated_value": "734.07",
+          "pnl_usd": "-39.70",
           "return_pct": "0.059621",
           "contribution_pct": "0.005962"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.119118",
-          "allocated_value": "735.73",
-          "pnl_usd": "136.69",
+          "allocated_value": "734.07",
+          "pnl_usd": "136.38",
           "return_pct": "-0.004534",
           "contribution_pct": "-0.000453"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.090120",
-          "allocated_value": "735.73",
-          "pnl_usd": "-72.75",
+          "allocated_value": "734.07",
+          "pnl_usd": "-72.58",
           "return_pct": "-0.000080",
           "contribution_pct": "-0.000008"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.141693",
-          "allocated_value": "735.73",
-          "pnl_usd": "361.70",
+          "allocated_value": "734.07",
+          "pnl_usd": "360.89",
           "return_pct": "0.052719",
           "contribution_pct": "0.005272"
         }
@@ -1049,8 +1049,8 @@
       "timestamp": 1742342400000,
       "week_number": 12,
       "portfolio": {
-        "start_value": "7461.68",
-        "end_value": "8084.94",
+        "start_value": "7444.88",
+        "end_value": "8066.73",
         "gross_return_pct": "0.083528",
         "net_return_pct": "0.083528",
         "total_fees": "0.00",
@@ -1061,80 +1061,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111387",
-          "allocated_value": "746.17",
-          "pnl_usd": "136.03",
+          "allocated_value": "744.49",
+          "pnl_usd": "135.72",
           "return_pct": "0.061431",
           "contribution_pct": "0.006143"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.071282",
-          "allocated_value": "746.17",
-          "pnl_usd": "-103.25",
+          "allocated_value": "744.49",
+          "pnl_usd": "-103.02",
           "return_pct": "0.208751",
           "contribution_pct": "0.020875"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103656",
-          "allocated_value": "746.17",
-          "pnl_usd": "29.89",
+          "allocated_value": "744.49",
+          "pnl_usd": "29.82",
           "return_pct": "0.003370",
           "contribution_pct": "0.000337"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.118612",
-          "allocated_value": "746.17",
-          "pnl_usd": "189.53",
+          "allocated_value": "744.49",
+          "pnl_usd": "189.11",
           "return_pct": "0.057235",
           "contribution_pct": "0.005723"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.071313",
-          "allocated_value": "746.17",
-          "pnl_usd": "-142.05",
+          "allocated_value": "744.49",
+          "pnl_usd": "-141.73",
           "return_pct": "0.135314",
           "contribution_pct": "0.013531"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.077634",
-          "allocated_value": "746.17",
-          "pnl_usd": "-126.24",
+          "allocated_value": "744.49",
+          "pnl_usd": "-125.96",
           "return_pct": "0.070167",
           "contribution_pct": "0.007017"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093268",
-          "allocated_value": "746.17",
-          "pnl_usd": "25.64",
+          "allocated_value": "744.49",
+          "pnl_usd": "25.58",
           "return_pct": "0.109011",
           "contribution_pct": "0.010901"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.116920",
-          "allocated_value": "746.17",
-          "pnl_usd": "168.99",
+          "allocated_value": "744.49",
+          "pnl_usd": "168.61",
           "return_pct": "0.048995",
           "contribution_pct": "0.004899"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088852",
-          "allocated_value": "746.17",
-          "pnl_usd": "14.01",
+          "allocated_value": "744.49",
+          "pnl_usd": "13.98",
           "return_pct": "0.146596",
           "contribution_pct": "0.014660"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.147076",
-          "allocated_value": "746.17",
-          "pnl_usd": "430.73",
+          "allocated_value": "744.49",
+          "pnl_usd": "429.76",
           "return_pct": "0.072404",
           "contribution_pct": "0.007240"
         }
@@ -1144,8 +1144,8 @@
       "timestamp": 1742947200000,
       "week_number": 13,
       "portfolio": {
-        "start_value": "8084.94",
-        "end_value": "7322.33",
+        "start_value": "8066.73",
+        "end_value": "7305.84",
         "gross_return_pct": "-0.094325",
         "net_return_pct": "-0.094325",
         "total_fees": "0.00",
@@ -1156,80 +1156,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.109116",
-          "allocated_value": "808.49",
-          "pnl_usd": "-6.14",
+          "allocated_value": "806.67",
+          "pnl_usd": "-6.13",
           "return_pct": "-0.090506",
           "contribution_pct": "-0.009051"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.079520",
-          "allocated_value": "808.49",
-          "pnl_usd": "-252.50",
+          "allocated_value": "806.67",
+          "pnl_usd": "-251.93",
           "return_pct": "-0.135194",
           "contribution_pct": "-0.013519"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095988",
-          "allocated_value": "808.49",
-          "pnl_usd": "-97.54",
+          "allocated_value": "806.67",
+          "pnl_usd": "-97.32",
           "return_pct": "-0.083881",
           "contribution_pct": "-0.008388"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.115734",
-          "allocated_value": "808.49",
-          "pnl_usd": "102.96",
+          "allocated_value": "806.67",
+          "pnl_usd": "102.73",
           "return_pct": "-0.025916",
           "contribution_pct": "-0.002592"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.074721",
-          "allocated_value": "808.49",
-          "pnl_usd": "-257.34",
+          "allocated_value": "806.67",
+          "pnl_usd": "-256.77",
           "return_pct": "-0.087672",
           "contribution_pct": "-0.008767"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.076677",
-          "allocated_value": "808.49",
-          "pnl_usd": "-237.04",
+          "allocated_value": "806.67",
+          "pnl_usd": "-236.51",
           "return_pct": "-0.078200",
           "contribution_pct": "-0.007820"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095462",
-          "allocated_value": "808.49",
-          "pnl_usd": "-106.40",
+          "allocated_value": "806.67",
+          "pnl_usd": "-106.16",
           "return_pct": "-0.090326",
           "contribution_pct": "-0.009033"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.113193",
-          "allocated_value": "808.49",
-          "pnl_usd": "10.52",
+          "allocated_value": "806.67",
+          "pnl_usd": "10.49",
           "return_pct": "-0.105062",
           "contribution_pct": "-0.010506"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094024",
-          "allocated_value": "808.49",
-          "pnl_usd": "-138.21",
+          "allocated_value": "806.67",
+          "pnl_usd": "-137.90",
           "return_pct": "-0.118249",
           "contribution_pct": "-0.011825"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.145566",
-          "allocated_value": "808.49",
-          "pnl_usd": "219.09",
+          "allocated_value": "806.67",
+          "pnl_usd": "218.60",
           "return_pct": "-0.126867",
           "contribution_pct": "-0.012687"
         }
@@ -1239,8 +1239,8 @@
       "timestamp": 1743552000000,
       "week_number": 14,
       "portfolio": {
-        "start_value": "7322.33",
-        "end_value": "6076.19",
+        "start_value": "7305.84",
+        "end_value": "6062.50",
         "gross_return_pct": "-0.170184",
         "net_return_pct": "-0.170184",
         "total_fees": "0.00",
@@ -1251,80 +1251,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.109576",
-          "allocated_value": "732.23",
-          "pnl_usd": "-71.33",
+          "allocated_value": "730.58",
+          "pnl_usd": "-71.17",
           "return_pct": "-0.176288",
           "contribution_pct": "-0.017629"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.075932",
-          "allocated_value": "732.23",
-          "pnl_usd": "-279.70",
+          "allocated_value": "730.58",
+          "pnl_usd": "-279.07",
           "return_pct": "-0.186082",
           "contribution_pct": "-0.018608"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097095",
-          "allocated_value": "732.23",
-          "pnl_usd": "-112.71",
+          "allocated_value": "730.58",
+          "pnl_usd": "-112.46",
           "return_pct": "-0.128614",
           "contribution_pct": "-0.012861"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124476",
-          "allocated_value": "732.23",
-          "pnl_usd": "83.88",
+          "allocated_value": "730.58",
+          "pnl_usd": "83.70",
           "return_pct": "-0.104596",
           "contribution_pct": "-0.010460"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.075270",
-          "allocated_value": "732.23",
-          "pnl_usd": "-282.01",
+          "allocated_value": "730.58",
+          "pnl_usd": "-281.37",
           "return_pct": "-0.183114",
           "contribution_pct": "-0.018311"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.078042",
-          "allocated_value": "732.23",
-          "pnl_usd": "-290.67",
+          "allocated_value": "730.58",
+          "pnl_usd": "-290.01",
           "return_pct": "-0.227292",
           "contribution_pct": "-0.022729"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095884",
-          "allocated_value": "732.23",
-          "pnl_usd": "-186.37",
+          "allocated_value": "730.58",
+          "pnl_usd": "-185.95",
           "return_pct": "-0.222523",
           "contribution_pct": "-0.022252"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111851",
-          "allocated_value": "732.23",
-          "pnl_usd": "-62.49",
+          "allocated_value": "730.58",
+          "pnl_usd": "-62.34",
           "return_pct": "-0.182249",
           "contribution_pct": "-0.018225"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091540",
-          "allocated_value": "732.23",
-          "pnl_usd": "-174.80",
+          "allocated_value": "730.58",
+          "pnl_usd": "-174.41",
           "return_pct": "-0.168364",
           "contribution_pct": "-0.016836"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.140336",
-          "allocated_value": "732.23",
-          "pnl_usd": "130.04",
+          "allocated_value": "730.58",
+          "pnl_usd": "129.75",
           "return_pct": "-0.160870",
           "contribution_pct": "-0.016087"
         }
@@ -1334,8 +1334,8 @@
       "timestamp": 1744156800000,
       "week_number": 15,
       "portfolio": {
-        "start_value": "6076.19",
-        "end_value": "6858.23",
+        "start_value": "6062.50",
+        "end_value": "6842.78",
         "gross_return_pct": "0.128706",
         "net_return_pct": "0.128706",
         "total_fees": "0.00",
@@ -1346,80 +1346,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.108770",
-          "allocated_value": "607.62",
-          "pnl_usd": "113.70",
+          "allocated_value": "606.25",
+          "pnl_usd": "113.45",
           "return_pct": "0.091414",
           "contribution_pct": "0.009141"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.074477",
-          "allocated_value": "607.62",
-          "pnl_usd": "-74.89",
+          "allocated_value": "606.25",
+          "pnl_usd": "-74.72",
           "return_pct": "0.177200",
           "contribution_pct": "0.017720"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.101959",
-          "allocated_value": "607.62",
-          "pnl_usd": "129.47",
+          "allocated_value": "606.25",
+          "pnl_usd": "129.18",
           "return_pct": "0.189783",
           "contribution_pct": "0.018978"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.134314",
-          "allocated_value": "607.62",
-          "pnl_usd": "287.30",
+          "allocated_value": "606.25",
+          "pnl_usd": "286.66",
           "return_pct": "0.096562",
           "contribution_pct": "0.009656"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.074097",
-          "allocated_value": "607.62",
-          "pnl_usd": "-121.38",
+          "allocated_value": "606.25",
+          "pnl_usd": "-121.10",
           "return_pct": "0.079997",
           "contribution_pct": "0.008000"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.072671",
-          "allocated_value": "607.62",
-          "pnl_usd": "-131.15",
+          "allocated_value": "606.25",
+          "pnl_usd": "-130.85",
           "return_pct": "0.079050",
           "contribution_pct": "0.007905"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089836",
-          "allocated_value": "607.62",
-          "pnl_usd": "4.05",
+          "allocated_value": "606.25",
+          "pnl_usd": "4.04",
           "return_pct": "0.120568",
           "contribution_pct": "0.012057"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.110225",
-          "allocated_value": "607.62",
-          "pnl_usd": "121.83",
+          "allocated_value": "606.25",
+          "pnl_usd": "121.56",
           "return_pct": "0.089146",
           "contribution_pct": "0.008915"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091741",
-          "allocated_value": "607.62",
-          "pnl_usd": "59.55",
+          "allocated_value": "606.25",
+          "pnl_usd": "59.41",
           "return_pct": "0.196849",
           "contribution_pct": "0.019685"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.141911",
-          "allocated_value": "607.62",
-          "pnl_usd": "393.54",
+          "allocated_value": "606.25",
+          "pnl_usd": "392.66",
           "return_pct": "0.161067",
           "contribution_pct": "0.016107"
         }
@@ -1429,8 +1429,8 @@
       "timestamp": 1744761600000,
       "week_number": 16,
       "portfolio": {
-        "start_value": "6858.23",
-        "end_value": "7724.34",
+        "start_value": "6842.78",
+        "end_value": "7706.94",
         "gross_return_pct": "0.126288",
         "net_return_pct": "0.126288",
         "total_fees": "0.00",
@@ -1441,80 +1441,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.105176",
-          "allocated_value": "685.82",
-          "pnl_usd": "119.61",
+          "allocated_value": "684.28",
+          "pnl_usd": "119.34",
           "return_pct": "0.116604",
           "contribution_pct": "0.011660"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.077677",
-          "allocated_value": "685.82",
-          "pnl_usd": "-65.34",
+          "allocated_value": "684.28",
+          "pnl_usd": "-65.19",
           "return_pct": "0.164737",
           "contribution_pct": "0.016474"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.107476",
-          "allocated_value": "685.82",
-          "pnl_usd": "150.46",
+          "allocated_value": "684.28",
+          "pnl_usd": "150.12",
           "return_pct": "0.134568",
           "contribution_pct": "0.013457"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.130489",
-          "allocated_value": "685.82",
-          "pnl_usd": "314.66",
+          "allocated_value": "684.28",
+          "pnl_usd": "313.96",
           "return_pct": "0.117959",
           "contribution_pct": "0.011796"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.070899",
-          "allocated_value": "685.82",
-          "pnl_usd": "-119.79",
+          "allocated_value": "684.28",
+          "pnl_usd": "-119.52",
           "return_pct": "0.164104",
           "contribution_pct": "0.016410"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.069474",
-          "allocated_value": "685.82",
-          "pnl_usd": "-158.78",
+          "allocated_value": "684.28",
+          "pnl_usd": "-158.42",
           "return_pct": "0.106145",
           "contribution_pct": "0.010615"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089188",
-          "allocated_value": "685.82",
-          "pnl_usd": "21.27",
+          "allocated_value": "684.28",
+          "pnl_usd": "21.22",
           "return_pct": "0.155997",
           "contribution_pct": "0.015600"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106362",
-          "allocated_value": "685.82",
-          "pnl_usd": "123.88",
+          "allocated_value": "684.28",
+          "pnl_usd": "123.60",
           "return_pct": "0.110019",
           "contribution_pct": "0.011002"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097279",
-          "allocated_value": "685.82",
-          "pnl_usd": "101.76",
+          "allocated_value": "684.28",
+          "pnl_usd": "101.53",
           "return_pct": "0.180492",
           "contribution_pct": "0.018049"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.145980",
-          "allocated_value": "685.82",
-          "pnl_usd": "378.37",
+          "allocated_value": "684.28",
+          "pnl_usd": "377.52",
           "return_pct": "0.062956",
           "contribution_pct": "0.006296"
         }
@@ -1524,8 +1524,8 @@
       "timestamp": 1745366400000,
       "week_number": 17,
       "portfolio": {
-        "start_value": "7724.34",
-        "end_value": "7779.99",
+        "start_value": "7706.94",
+        "end_value": "7762.47",
         "gross_return_pct": "0.007205",
         "net_return_pct": "0.007205",
         "total_fees": "0.00",
@@ -1536,71 +1536,71 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104272",
-          "allocated_value": "772.43",
-          "pnl_usd": "52.07",
+          "allocated_value": "770.69",
+          "pnl_usd": "51.95",
           "return_pct": "0.023680",
           "contribution_pct": "0.002368"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.080329",
-          "allocated_value": "772.43",
-          "pnl_usd": "-167.65",
+          "allocated_value": "770.69",
+          "pnl_usd": "-167.27",
           "return_pct": "-0.025305",
           "contribution_pct": "-0.002531"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.108266",
-          "allocated_value": "772.43",
-          "pnl_usd": "67.15",
+          "allocated_value": "770.69",
+          "pnl_usd": "67.00",
           "return_pct": "0.003944",
           "contribution_pct": "0.000394"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.129524",
-          "allocated_value": "772.43",
-          "pnl_usd": "236.45",
+          "allocated_value": "770.69",
+          "pnl_usd": "235.92",
           "return_pct": "0.008392",
           "contribution_pct": "0.000839"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.073280",
-          "allocated_value": "772.43",
-          "pnl_usd": "-219.07",
+          "allocated_value": "770.69",
+          "pnl_usd": "-218.57",
           "return_pct": "-0.022385",
           "contribution_pct": "-0.002239"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.068232",
-          "allocated_value": "772.43",
-          "pnl_usd": "-233.06",
+          "allocated_value": "770.69",
+          "pnl_usd": "-232.53",
           "return_pct": "0.023397",
           "contribution_pct": "0.002340"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091541",
-          "allocated_value": "772.43",
-          "pnl_usd": "-42.14",
+          "allocated_value": "770.69",
+          "pnl_usd": "-42.04",
           "return_pct": "0.032817",
           "contribution_pct": "0.003282"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104825",
-          "allocated_value": "772.43",
-          "pnl_usd": "57.14",
+          "allocated_value": "770.69",
+          "pnl_usd": "57.01",
           "return_pct": "0.024539",
           "contribution_pct": "0.002454"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.101961",
-          "allocated_value": "772.43",
+          "allocated_value": "770.69",
           "pnl_usd": "1.76",
           "return_pct": "-0.016996",
           "contribution_pct": "-0.001700"
@@ -1608,8 +1608,8 @@
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.137771",
-          "allocated_value": "772.43",
-          "pnl_usd": "303.00",
+          "allocated_value": "770.69",
+          "pnl_usd": "302.32",
           "return_pct": "0.010563",
           "contribution_pct": "0.001056"
         }
@@ -1619,8 +1619,8 @@
       "timestamp": 1745971200000,
       "week_number": 18,
       "portfolio": {
-        "start_value": "7779.99",
-        "end_value": "7747.69",
+        "start_value": "7762.47",
+        "end_value": "7730.24",
         "gross_return_pct": "-0.004152",
         "net_return_pct": "-0.004152",
         "total_fees": "0.00",
@@ -1631,71 +1631,71 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.105977",
-          "allocated_value": "778.00",
-          "pnl_usd": "26.25",
+          "allocated_value": "776.25",
+          "pnl_usd": "26.19",
           "return_pct": "-0.024569",
           "contribution_pct": "-0.002457"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.077736",
-          "allocated_value": "778.00",
-          "pnl_usd": "-217.24",
+          "allocated_value": "776.25",
+          "pnl_usd": "-216.75",
           "return_pct": "-0.072786",
           "contribution_pct": "-0.007279"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.107915",
-          "allocated_value": "778.00",
-          "pnl_usd": "86.29",
+          "allocated_value": "776.25",
+          "pnl_usd": "86.09",
           "return_pct": "0.029426",
           "contribution_pct": "0.002943"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.129677",
-          "allocated_value": "778.00",
-          "pnl_usd": "258.42",
+          "allocated_value": "776.25",
+          "pnl_usd": "257.84",
           "return_pct": "0.027291",
           "contribution_pct": "0.002729"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.071127",
-          "allocated_value": "778.00",
-          "pnl_usd": "-232.46",
+          "allocated_value": "776.25",
+          "pnl_usd": "-231.93",
           "return_pct": "-0.014139",
           "contribution_pct": "-0.001414"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.069329",
-          "allocated_value": "778.00",
-          "pnl_usd": "-232.97",
+          "allocated_value": "776.25",
+          "pnl_usd": "-232.44",
           "return_pct": "0.010488",
           "contribution_pct": "0.001049"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093868",
-          "allocated_value": "778.00",
-          "pnl_usd": "-86.71",
+          "allocated_value": "776.25",
+          "pnl_usd": "-86.52",
           "return_pct": "-0.053414",
           "contribution_pct": "-0.005341"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106629",
-          "allocated_value": "778.00",
-          "pnl_usd": "109.73",
+          "allocated_value": "776.25",
+          "pnl_usd": "109.48",
           "return_pct": "0.070102",
           "contribution_pct": "0.007010"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.099511",
-          "allocated_value": "778.00",
+          "allocated_value": "776.25",
           "pnl_usd": "-0.84",
           "return_pct": "0.003827",
           "contribution_pct": "0.000383"
@@ -1703,8 +1703,8 @@
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.138230",
-          "allocated_value": "778.00",
-          "pnl_usd": "257.22",
+          "allocated_value": "776.25",
+          "pnl_usd": "256.64",
           "return_pct": "-0.037389",
           "contribution_pct": "-0.003739"
         }
@@ -1714,8 +1714,8 @@
       "timestamp": 1746576000000,
       "week_number": 19,
       "portfolio": {
-        "start_value": "7747.69",
-        "end_value": "9419.48",
+        "start_value": "7730.24",
+        "end_value": "9398.27",
         "gross_return_pct": "0.215780",
         "net_return_pct": "0.215780",
         "total_fees": "0.00",
@@ -1726,80 +1726,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103805",
-          "allocated_value": "774.77",
-          "pnl_usd": "208.48",
+          "allocated_value": "773.02",
+          "pnl_usd": "208.01",
           "return_pct": "0.222566",
           "contribution_pct": "0.022257"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.072378",
-          "allocated_value": "774.77",
-          "pnl_usd": "-53.63",
+          "allocated_value": "773.02",
+          "pnl_usd": "-53.51",
           "return_pct": "0.286000",
           "contribution_pct": "0.028600"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111554",
-          "allocated_value": "774.77",
-          "pnl_usd": "173.99",
+          "allocated_value": "773.02",
+          "pnl_usd": "173.60",
           "return_pct": "0.097737",
           "contribution_pct": "0.009774"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.133771",
-          "allocated_value": "774.77",
-          "pnl_usd": "339.64",
+          "allocated_value": "773.02",
+          "pnl_usd": "338.87",
           "return_pct": "0.075249",
           "contribution_pct": "0.007525"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.070414",
-          "allocated_value": "774.77",
-          "pnl_usd": "-11.89",
+          "allocated_value": "773.02",
+          "pnl_usd": "-11.86",
           "return_pct": "0.398386",
           "contribution_pct": "0.039839"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.070348",
-          "allocated_value": "774.77",
-          "pnl_usd": "29.05",
+          "allocated_value": "773.02",
+          "pnl_usd": "28.99",
           "return_pct": "0.474811",
           "contribution_pct": "0.047481"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089225",
-          "allocated_value": "774.77",
-          "pnl_usd": "95.06",
+          "allocated_value": "773.02",
+          "pnl_usd": "94.84",
           "return_pct": "0.258265",
           "contribution_pct": "0.025827"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.114580",
-          "allocated_value": "774.77",
-          "pnl_usd": "227.53",
+          "allocated_value": "773.02",
+          "pnl_usd": "227.01",
           "return_pct": "0.129053",
           "contribution_pct": "0.012905"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100308",
-          "allocated_value": "774.77",
-          "pnl_usd": "197.46",
+          "allocated_value": "773.02",
+          "pnl_usd": "197.02",
           "return_pct": "0.251004",
           "contribution_pct": "0.025100"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.133617",
-          "allocated_value": "774.77",
-          "pnl_usd": "466.11",
+          "allocated_value": "773.02",
+          "pnl_usd": "465.06",
           "return_pct": "0.198664",
           "contribution_pct": "0.019866"
         }
@@ -1809,8 +1809,8 @@
       "timestamp": 1747180800000,
       "week_number": 20,
       "portfolio": {
-        "start_value": "9419.48",
-        "end_value": "8773.69",
+        "start_value": "9398.27",
+        "end_value": "8753.93",
         "gross_return_pct": "-0.068559",
         "net_return_pct": "-0.068559",
         "total_fees": "0.00",
@@ -1821,80 +1821,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104384",
-          "allocated_value": "941.95",
-          "pnl_usd": "-58.09",
+          "allocated_value": "939.83",
+          "pnl_usd": "-57.96",
           "return_pct": "-0.101084",
           "contribution_pct": "-0.010108"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.076559",
-          "allocated_value": "941.95",
-          "pnl_usd": "-307.16",
+          "allocated_value": "939.83",
+          "pnl_usd": "-306.47",
           "return_pct": "-0.119751",
           "contribution_pct": "-0.011975"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100723",
-          "allocated_value": "941.95",
-          "pnl_usd": "-32.06",
+          "allocated_value": "939.83",
+          "pnl_usd": "-31.99",
           "return_pct": "-0.040968",
           "contribution_pct": "-0.004097"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.118309",
-          "allocated_value": "941.95",
-          "pnl_usd": "201.91",
+          "allocated_value": "939.83",
+          "pnl_usd": "201.45",
           "return_pct": "0.026429",
           "contribution_pct": "0.002643"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.080989",
-          "allocated_value": "941.95",
-          "pnl_usd": "-224.62",
+          "allocated_value": "939.83",
+          "pnl_usd": "-224.11",
           "return_pct": "-0.059710",
           "contribution_pct": "-0.005971"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.085336",
-          "allocated_value": "941.95",
-          "pnl_usd": "-184.55",
+          "allocated_value": "939.83",
+          "pnl_usd": "-184.14",
           "return_pct": "-0.057754",
           "contribution_pct": "-0.005775"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.092343",
-          "allocated_value": "941.95",
-          "pnl_usd": "-156.24",
+          "allocated_value": "939.83",
+          "pnl_usd": "-155.89",
           "return_pct": "-0.096706",
           "contribution_pct": "-0.009671"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106407",
-          "allocated_value": "941.95",
-          "pnl_usd": "-25.62",
+          "allocated_value": "939.83",
+          "pnl_usd": "-25.57",
           "return_pct": "-0.085775",
           "contribution_pct": "-0.008578"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103215",
-          "allocated_value": "941.95",
-          "pnl_usd": "-49.66",
+          "allocated_value": "939.83",
+          "pnl_usd": "-49.55",
           "return_pct": "-0.082227",
           "contribution_pct": "-0.008223"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.131736",
-          "allocated_value": "941.95",
-          "pnl_usd": "190.32",
+          "allocated_value": "939.83",
+          "pnl_usd": "189.89",
           "return_pct": "-0.087534",
           "contribution_pct": "-0.008753"
         }
@@ -1904,8 +1904,8 @@
       "timestamp": 1747785600000,
       "week_number": 21,
       "portfolio": {
-        "start_value": "8773.69",
-        "end_value": "8966.49",
+        "start_value": "8753.93",
+        "end_value": "8946.30",
         "gross_return_pct": "0.021975",
         "net_return_pct": "0.021975",
         "total_fees": "0.00",
@@ -1916,80 +1916,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100739",
-          "allocated_value": "877.37",
-          "pnl_usd": "21.41",
+          "allocated_value": "875.39",
+          "pnl_usd": "21.36",
           "return_pct": "0.016888",
           "contribution_pct": "0.001689"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.072351",
-          "allocated_value": "877.37",
-          "pnl_usd": "-221.84",
+          "allocated_value": "875.39",
+          "pnl_usd": "-221.34",
           "return_pct": "0.032686",
           "contribution_pct": "0.003269"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103707",
-          "allocated_value": "877.37",
-          "pnl_usd": "79.23",
+          "allocated_value": "875.39",
+          "pnl_usd": "79.05",
           "return_pct": "0.051337",
           "contribution_pct": "0.005134"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.130374",
-          "allocated_value": "877.37",
-          "pnl_usd": "288.91",
+          "allocated_value": "875.39",
+          "pnl_usd": "288.26",
           "return_pct": "0.019603",
           "contribution_pct": "0.001960"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.081759",
-          "allocated_value": "877.37",
-          "pnl_usd": "-161.02",
+          "allocated_value": "875.39",
+          "pnl_usd": "-160.66",
           "return_pct": "-0.001369",
           "contribution_pct": "-0.000137"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.086326",
-          "allocated_value": "877.37",
-          "pnl_usd": "-78.84",
+          "allocated_value": "875.39",
+          "pnl_usd": "-78.66",
           "return_pct": "0.054308",
           "contribution_pct": "0.005431"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089553",
-          "allocated_value": "877.37",
-          "pnl_usd": "-81.66",
+          "allocated_value": "875.39",
+          "pnl_usd": "-81.48",
           "return_pct": "0.012730",
           "contribution_pct": "0.001273"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104440",
-          "allocated_value": "877.37",
-          "pnl_usd": "52.52",
+          "allocated_value": "875.39",
+          "pnl_usd": "52.41",
           "return_pct": "0.014809",
           "contribution_pct": "0.001481"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.101700",
-          "allocated_value": "877.37",
-          "pnl_usd": "57.88",
+          "allocated_value": "875.39",
+          "pnl_usd": "57.75",
           "return_pct": "0.048147",
           "contribution_pct": "0.004815"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.129052",
-          "allocated_value": "877.37",
-          "pnl_usd": "236.21",
+          "allocated_value": "875.39",
+          "pnl_usd": "235.68",
           "return_pct": "-0.016505",
           "contribution_pct": "-0.001650"
         }
@@ -1999,8 +1999,8 @@
       "timestamp": 1748390400000,
       "week_number": 22,
       "portfolio": {
-        "start_value": "8966.49",
-        "end_value": "8322.00",
+        "start_value": "8946.30",
+        "end_value": "8303.26",
         "gross_return_pct": "-0.071878",
         "net_return_pct": "-0.071878",
         "total_fees": "0.00",
@@ -2011,80 +2011,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100238",
-          "allocated_value": "896.65",
-          "pnl_usd": "-86.24",
+          "allocated_value": "894.63",
+          "pnl_usd": "-86.05",
           "return_pct": "-0.098326",
           "contribution_pct": "-0.009833"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.073109",
-          "allocated_value": "896.65",
-          "pnl_usd": "-303.64",
+          "allocated_value": "894.63",
+          "pnl_usd": "-302.96",
           "return_pct": "-0.095381",
           "contribution_pct": "-0.009538"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106686",
-          "allocated_value": "896.65",
-          "pnl_usd": "28.33",
+          "allocated_value": "894.63",
+          "pnl_usd": "28.26",
           "return_pct": "-0.033060",
           "contribution_pct": "-0.003306"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.130071",
-          "allocated_value": "896.65",
-          "pnl_usd": "231.80",
+          "allocated_value": "894.63",
+          "pnl_usd": "231.28",
           "return_pct": "-0.032433",
           "contribution_pct": "-0.003243"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.079891",
-          "allocated_value": "896.65",
-          "pnl_usd": "-284.68",
+          "allocated_value": "894.63",
+          "pnl_usd": "-284.04",
           "return_pct": "-0.145706",
           "contribution_pct": "-0.014571"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089057",
-          "allocated_value": "896.65",
-          "pnl_usd": "-118.26",
+          "allocated_value": "894.63",
+          "pnl_usd": "-118.00",
           "return_pct": "-0.025224",
           "contribution_pct": "-0.002522"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088743",
-          "allocated_value": "896.65",
-          "pnl_usd": "-190.36",
+          "allocated_value": "894.63",
+          "pnl_usd": "-189.93",
           "return_pct": "-0.112375",
           "contribution_pct": "-0.011238"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103708",
-          "allocated_value": "896.65",
-          "pnl_usd": "-28.79",
+          "allocated_value": "894.63",
+          "pnl_usd": "-28.72",
           "return_pct": "-0.066708",
           "contribution_pct": "-0.006671"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104305",
-          "allocated_value": "896.65",
-          "pnl_usd": "-74.94",
+          "allocated_value": "894.63",
+          "pnl_usd": "-74.77",
           "return_pct": "-0.121401",
           "contribution_pct": "-0.012140"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124193",
-          "allocated_value": "896.65",
-          "pnl_usd": "182.29",
+          "allocated_value": "894.63",
+          "pnl_usd": "181.88",
           "return_pct": "-0.031104",
           "contribution_pct": "-0.003110"
         }
@@ -2094,8 +2094,8 @@
       "timestamp": 1748995200000,
       "week_number": 23,
       "portfolio": {
-        "start_value": "8322.00",
-        "end_value": "8805.31",
+        "start_value": "8303.26",
+        "end_value": "8785.48",
         "gross_return_pct": "0.058076",
         "net_return_pct": "0.058076",
         "total_fees": "0.00",
@@ -2106,80 +2106,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097381",
-          "allocated_value": "832.20",
-          "pnl_usd": "16.83",
+          "allocated_value": "830.33",
+          "pnl_usd": "16.79",
           "return_pct": "0.047654",
           "contribution_pct": "0.004765"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.071258",
-          "allocated_value": "832.20",
-          "pnl_usd": "-199.38",
+          "allocated_value": "830.33",
+          "pnl_usd": "-198.93",
           "return_pct": "0.067139",
           "contribution_pct": "0.006714"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111148",
-          "allocated_value": "832.20",
-          "pnl_usd": "177.66",
+          "allocated_value": "830.33",
+          "pnl_usd": "177.26",
           "return_pct": "0.091773",
           "contribution_pct": "0.009177"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.135599",
-          "allocated_value": "832.20",
-          "pnl_usd": "348.23",
+          "allocated_value": "830.33",
+          "pnl_usd": "347.44",
           "return_pct": "0.046056",
           "contribution_pct": "0.004606"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.073536",
-          "allocated_value": "832.20",
-          "pnl_usd": "-203.35",
+          "allocated_value": "830.33",
+          "pnl_usd": "-202.89",
           "return_pct": "0.027589",
           "contribution_pct": "0.002759"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093534",
-          "allocated_value": "832.20",
-          "pnl_usd": "12.67",
+          "allocated_value": "830.33",
+          "pnl_usd": "12.65",
           "return_pct": "0.085417",
           "contribution_pct": "0.008542"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.084870",
-          "allocated_value": "832.20",
-          "pnl_usd": "-59.60",
+          "allocated_value": "830.33",
+          "pnl_usd": "-59.46",
           "return_pct": "0.093889",
           "contribution_pct": "0.009389"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104285",
-          "allocated_value": "832.20",
-          "pnl_usd": "72.59",
+          "allocated_value": "830.33",
+          "pnl_usd": "72.43",
           "return_pct": "0.042551",
           "contribution_pct": "0.004255"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.098739",
-          "allocated_value": "832.20",
-          "pnl_usd": "41.46",
+          "allocated_value": "830.33",
+          "pnl_usd": "41.37",
           "return_pct": "0.063228",
           "contribution_pct": "0.006323"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.129649",
-          "allocated_value": "832.20",
-          "pnl_usd": "276.19",
+          "allocated_value": "830.33",
+          "pnl_usd": "275.57",
           "return_pct": "0.027294",
           "contribution_pct": "0.002729"
         }
@@ -2189,8 +2189,8 @@
       "timestamp": 1749600000000,
       "week_number": 24,
       "portfolio": {
-        "start_value": "8805.31",
-        "end_value": "8005.10",
+        "start_value": "8785.48",
+        "end_value": "7987.07",
         "gross_return_pct": "-0.090878",
         "net_return_pct": "-0.090878",
         "total_fees": "0.00",
@@ -2201,80 +2201,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.096422",
-          "allocated_value": "880.53",
-          "pnl_usd": "-158.85",
+          "allocated_value": "878.55",
+          "pnl_usd": "-158.50",
           "return_pct": "-0.149993",
           "contribution_pct": "-0.014999"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.071868",
-          "allocated_value": "880.53",
-          "pnl_usd": "-359.02",
+          "allocated_value": "878.55",
+          "pnl_usd": "-358.21",
           "return_pct": "-0.175897",
           "contribution_pct": "-0.017590"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.114688",
-          "allocated_value": "880.53",
-          "pnl_usd": "187.14",
+          "allocated_value": "878.55",
+          "pnl_usd": "186.72",
           "return_pct": "0.057242",
           "contribution_pct": "0.005724"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.134058",
-          "allocated_value": "880.53",
-          "pnl_usd": "238.79",
+          "allocated_value": "878.55",
+          "pnl_usd": "238.25",
           "return_pct": "-0.051766",
           "contribution_pct": "-0.005177"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.071418",
-          "allocated_value": "880.53",
-          "pnl_usd": "-343.89",
+          "allocated_value": "878.55",
+          "pnl_usd": "-343.12",
           "return_pct": "-0.146635",
           "contribution_pct": "-0.014664"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095951",
-          "allocated_value": "880.53",
-          "pnl_usd": "-127.46",
+          "allocated_value": "878.55",
+          "pnl_usd": "-127.17",
           "return_pct": "-0.108656",
           "contribution_pct": "-0.010866"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087743",
-          "allocated_value": "880.53",
-          "pnl_usd": "-230.70",
+          "allocated_value": "878.55",
+          "pnl_usd": "-230.18",
           "return_pct": "-0.158910",
           "contribution_pct": "-0.015891"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.102755",
-          "allocated_value": "880.53",
-          "pnl_usd": "-63.75",
+          "allocated_value": "878.55",
+          "pnl_usd": "-63.61",
           "return_pct": "-0.097268",
           "contribution_pct": "-0.009727"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.099220",
-          "allocated_value": "880.53",
-          "pnl_usd": "-99.56",
+          "allocated_value": "878.55",
+          "pnl_usd": "-99.34",
           "return_pct": "-0.106098",
           "contribution_pct": "-0.010610"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.125877",
-          "allocated_value": "880.53",
-          "pnl_usd": "157.09",
+          "allocated_value": "878.55",
+          "pnl_usd": "156.74",
           "return_pct": "-0.063844",
           "contribution_pct": "-0.006384"
         }
@@ -2284,8 +2284,8 @@
       "timestamp": 1750204800000,
       "week_number": 25,
       "portfolio": {
-        "start_value": "8005.10",
-        "end_value": "7969.28",
+        "start_value": "7987.07",
+        "end_value": "7951.34",
         "gross_return_pct": "-0.004474",
         "net_return_pct": "-0.004474",
         "total_fees": "0.00",
@@ -2296,80 +2296,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.090152",
-          "allocated_value": "800.51",
-          "pnl_usd": "-104.06",
+          "allocated_value": "798.71",
+          "pnl_usd": "-103.83",
           "return_pct": "-0.034964",
           "contribution_pct": "-0.003496"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.065147",
-          "allocated_value": "800.51",
-          "pnl_usd": "-289.37",
+          "allocated_value": "798.71",
+          "pnl_usd": "-288.72",
           "return_pct": "-0.019892",
           "contribution_pct": "-0.001989"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.133374",
-          "allocated_value": "800.51",
-          "pnl_usd": "246.79",
+          "allocated_value": "798.71",
+          "pnl_usd": "246.24",
           "return_pct": "-0.019077",
           "contribution_pct": "-0.001908"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.139826",
-          "allocated_value": "800.51",
-          "pnl_usd": "335.40",
+          "allocated_value": "798.71",
+          "pnl_usd": "334.65",
           "return_pct": "0.014825",
           "contribution_pct": "0.001483"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.067037",
-          "allocated_value": "800.51",
-          "pnl_usd": "-275.27",
+          "allocated_value": "798.71",
+          "pnl_usd": "-274.65",
           "return_pct": "-0.021250",
           "contribution_pct": "-0.002125"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094074",
-          "allocated_value": "800.51",
-          "pnl_usd": "-65.70",
+          "allocated_value": "798.71",
+          "pnl_usd": "-65.55",
           "return_pct": "-0.024257",
           "contribution_pct": "-0.002426"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.081177",
-          "allocated_value": "800.51",
-          "pnl_usd": "-129.48",
+          "allocated_value": "798.71",
+          "pnl_usd": "-129.18",
           "return_pct": "0.032630",
           "contribution_pct": "0.003263"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.102033",
-          "allocated_value": "800.51",
-          "pnl_usd": "22.18",
+          "allocated_value": "798.71",
+          "pnl_usd": "22.13",
           "return_pct": "0.007239",
           "contribution_pct": "0.000724"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097559",
-          "allocated_value": "800.51",
-          "pnl_usd": "-28.22",
+          "allocated_value": "798.71",
+          "pnl_usd": "-28.16",
           "return_pct": "-0.011110",
           "contribution_pct": "-0.001111"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.129620",
-          "allocated_value": "800.51",
-          "pnl_usd": "251.91",
+          "allocated_value": "798.71",
+          "pnl_usd": "251.34",
           "return_pct": "0.014260",
           "contribution_pct": "0.001426"
         }
@@ -2379,8 +2379,8 @@
       "timestamp": 1750809600000,
       "week_number": 26,
       "portfolio": {
-        "start_value": "7969.28",
-        "end_value": "7901.88",
+        "start_value": "7951.34",
+        "end_value": "7884.08",
         "gross_return_pct": "-0.008458",
         "net_return_pct": "-0.008458",
         "total_fees": "0.00",
@@ -2391,80 +2391,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087391",
-          "allocated_value": "796.93",
-          "pnl_usd": "-154.50",
+          "allocated_value": "795.13",
+          "pnl_usd": "-154.15",
           "return_pct": "-0.077564",
           "contribution_pct": "-0.007756"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.064138",
-          "allocated_value": "796.93",
-          "pnl_usd": "-317.48",
+          "allocated_value": "795.13",
+          "pnl_usd": "-316.76",
           "return_pct": "-0.061986",
           "contribution_pct": "-0.006199"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.131417",
-          "allocated_value": "796.93",
-          "pnl_usd": "357.43",
+          "allocated_value": "795.13",
+          "pnl_usd": "356.63",
           "return_pct": "0.102220",
           "contribution_pct": "0.010222"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.142537",
-          "allocated_value": "796.93",
-          "pnl_usd": "334.39",
+          "allocated_value": "795.13",
+          "pnl_usd": "333.64",
           "return_pct": "-0.004044",
           "contribution_pct": "-0.000404"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.065908",
-          "allocated_value": "796.93",
-          "pnl_usd": "-296.94",
+          "allocated_value": "795.13",
+          "pnl_usd": "-296.27",
           "return_pct": "-0.048067",
           "contribution_pct": "-0.004807"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.092205",
-          "allocated_value": "796.93",
-          "pnl_usd": "-75.42",
+          "allocated_value": "795.13",
+          "pnl_usd": "-75.25",
           "return_pct": "-0.018096",
           "contribution_pct": "-0.001810"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.084203",
-          "allocated_value": "796.93",
-          "pnl_usd": "-151.80",
+          "allocated_value": "795.13",
+          "pnl_usd": "-151.46",
           "return_pct": "-0.038605",
           "contribution_pct": "-0.003860"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103233",
-          "allocated_value": "796.93",
-          "pnl_usd": "9.97",
+          "allocated_value": "795.13",
+          "pnl_usd": "9.94",
           "return_pct": "-0.019204",
           "contribution_pct": "-0.001920"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.096908",
-          "allocated_value": "796.93",
-          "pnl_usd": "-19.66",
+          "allocated_value": "795.13",
+          "pnl_usd": "-19.62",
           "return_pct": "0.006440",
           "contribution_pct": "0.000644"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.132060",
-          "allocated_value": "796.93",
-          "pnl_usd": "246.61",
+          "allocated_value": "795.13",
+          "pnl_usd": "246.05",
           "return_pct": "-0.008445",
           "contribution_pct": "-0.000844"
         }
@@ -2474,8 +2474,8 @@
       "timestamp": 1751414400000,
       "week_number": 27,
       "portfolio": {
-        "start_value": "7901.88",
-        "end_value": "8323.17",
+        "start_value": "7884.08",
+        "end_value": "8304.43",
         "gross_return_pct": "0.053315",
         "net_return_pct": "0.053315",
         "total_fees": "0.00",
@@ -2486,80 +2486,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.081300",
-          "allocated_value": "790.19",
-          "pnl_usd": "-93.03",
+          "allocated_value": "788.41",
+          "pnl_usd": "-92.82",
           "return_pct": "0.085193",
           "contribution_pct": "0.008519"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.060676",
-          "allocated_value": "790.19",
-          "pnl_usd": "-275.13",
+          "allocated_value": "788.41",
+          "pnl_usd": "-274.51",
           "return_pct": "0.074269",
           "contribution_pct": "0.007427"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.146087",
-          "allocated_value": "790.19",
-          "pnl_usd": "365.53",
+          "allocated_value": "788.41",
+          "pnl_usd": "364.71",
           "return_pct": "0.001179",
           "contribution_pct": "0.000118"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.143171",
-          "allocated_value": "790.19",
-          "pnl_usd": "375.83",
+          "allocated_value": "788.41",
+          "pnl_usd": "374.98",
           "return_pct": "0.030667",
           "contribution_pct": "0.003067"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.063275",
-          "allocated_value": "790.19",
-          "pnl_usd": "-248.61",
+          "allocated_value": "788.41",
+          "pnl_usd": "-248.05",
           "return_pct": "0.083186",
           "contribution_pct": "0.008319"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091309",
-          "allocated_value": "790.19",
-          "pnl_usd": "-5.41",
+          "allocated_value": "788.41",
+          "pnl_usd": "-5.39",
           "return_pct": "0.087694",
           "contribution_pct": "0.008769"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.081642",
-          "allocated_value": "790.19",
-          "pnl_usd": "-91.45",
+          "allocated_value": "788.41",
+          "pnl_usd": "-91.24",
           "return_pct": "0.083101",
           "contribution_pct": "0.008310"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.102114",
-          "allocated_value": "790.19",
-          "pnl_usd": "60.91",
+          "allocated_value": "788.41",
+          "pnl_usd": "60.77",
           "return_pct": "0.054775",
           "contribution_pct": "0.005477"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.098364",
-          "allocated_value": "790.19",
-          "pnl_usd": "12.52",
+          "allocated_value": "788.41",
+          "pnl_usd": "12.50",
           "return_pct": "0.032741",
           "contribution_pct": "0.003274"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.132061",
-          "allocated_value": "790.19",
-          "pnl_usd": "320.12",
+          "allocated_value": "788.41",
+          "pnl_usd": "319.40",
           "return_pct": "0.063990",
           "contribution_pct": "0.006399"
         }
@@ -2569,8 +2569,8 @@
       "timestamp": 1752019200000,
       "week_number": 28,
       "portfolio": {
-        "start_value": "8323.17",
-        "end_value": "9507.83",
+        "start_value": "8304.43",
+        "end_value": "9486.42",
         "gross_return_pct": "0.142333",
         "net_return_pct": "0.142333",
         "total_fees": "0.00",
@@ -2581,80 +2581,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.083761",
-          "allocated_value": "832.32",
-          "pnl_usd": "52.37",
+          "allocated_value": "830.44",
+          "pnl_usd": "52.25",
           "return_pct": "0.268989",
           "contribution_pct": "0.026899"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.061883",
-          "allocated_value": "832.32",
-          "pnl_usd": "-200.90",
+          "allocated_value": "830.44",
+          "pnl_usd": "-200.45",
           "return_pct": "0.225912",
           "contribution_pct": "0.022591"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.138856",
-          "allocated_value": "832.32",
-          "pnl_usd": "316.46",
+          "allocated_value": "830.44",
+          "pnl_usd": "315.75",
           "return_pct": "-0.006008",
           "contribution_pct": "-0.000601"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.140093",
-          "allocated_value": "832.32",
-          "pnl_usd": "428.17",
+          "allocated_value": "830.44",
+          "pnl_usd": "427.21",
           "return_pct": "0.081026",
           "contribution_pct": "0.008103"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.065069",
-          "allocated_value": "832.32",
-          "pnl_usd": "-201.34",
+          "allocated_value": "830.44",
+          "pnl_usd": "-200.89",
           "return_pct": "0.165058",
           "contribution_pct": "0.016506"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094289",
-          "allocated_value": "832.32",
-          "pnl_usd": "109.17",
+          "allocated_value": "830.44",
+          "pnl_usd": "108.93",
           "return_pct": "0.199683",
           "contribution_pct": "0.019968"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.083951",
-          "allocated_value": "832.32",
-          "pnl_usd": "-26.76",
+          "allocated_value": "830.44",
+          "pnl_usd": "-26.70",
           "return_pct": "0.152877",
           "contribution_pct": "0.015288"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.102256",
-          "allocated_value": "832.32",
-          "pnl_usd": "101.84",
+          "allocated_value": "830.44",
+          "pnl_usd": "101.61",
           "return_pct": "0.097597",
           "contribution_pct": "0.009760"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.096443",
-          "allocated_value": "832.32",
-          "pnl_usd": "35.42",
+          "allocated_value": "830.44",
+          "pnl_usd": "35.34",
           "return_pct": "0.081004",
           "contribution_pct": "0.008100"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.133400",
-          "allocated_value": "832.32",
-          "pnl_usd": "570.22",
+          "allocated_value": "830.44",
+          "pnl_usd": "568.94",
           "return_pct": "0.263197",
           "contribution_pct": "0.026320"
         }
@@ -2664,8 +2664,8 @@
       "timestamp": 1752624000000,
       "week_number": 29,
       "portfolio": {
-        "start_value": "9507.83",
-        "end_value": "11218.60",
+        "start_value": "9486.42",
+        "end_value": "11193.34",
         "gross_return_pct": "0.179933",
         "net_return_pct": "0.179933",
         "total_fees": "0.00",
@@ -2676,80 +2676,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093048",
-          "allocated_value": "950.78",
-          "pnl_usd": "120.24",
+          "allocated_value": "948.64",
+          "pnl_usd": "119.97",
           "return_pct": "0.210632",
           "contribution_pct": "0.021063"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.066410",
-          "allocated_value": "950.78",
-          "pnl_usd": "-224.59",
+          "allocated_value": "948.64",
+          "pnl_usd": "-224.09",
           "return_pct": "0.150089",
           "contribution_pct": "0.015009"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.120824",
-          "allocated_value": "950.78",
-          "pnl_usd": "263.30",
+          "allocated_value": "948.64",
+          "pnl_usd": "262.70",
           "return_pct": "0.056846",
           "contribution_pct": "0.005685"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.132574",
-          "allocated_value": "950.78",
-          "pnl_usd": "333.82",
+          "allocated_value": "948.64",
+          "pnl_usd": "333.06",
           "return_pct": "0.019125",
           "contribution_pct": "0.001913"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.066364",
-          "allocated_value": "950.78",
-          "pnl_usd": "-92.08",
+          "allocated_value": "948.64",
+          "pnl_usd": "-91.87",
           "return_pct": "0.360912",
           "contribution_pct": "0.036091"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.099023",
-          "allocated_value": "950.78",
-          "pnl_usd": "173.63",
+          "allocated_value": "948.64",
+          "pnl_usd": "173.24",
           "return_pct": "0.194288",
           "contribution_pct": "0.019429"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.084726",
-          "allocated_value": "950.78",
-          "pnl_usd": "32.96",
+          "allocated_value": "948.64",
+          "pnl_usd": "32.89",
           "return_pct": "0.221194",
           "contribution_pct": "0.022119"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.098251",
-          "allocated_value": "950.78",
-          "pnl_usd": "209.69",
+          "allocated_value": "948.64",
+          "pnl_usd": "209.22",
           "return_pct": "0.242270",
           "contribution_pct": "0.024227"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091265",
-          "allocated_value": "950.78",
-          "pnl_usd": "138.05",
+          "allocated_value": "948.64",
+          "pnl_usd": "137.74",
           "return_pct": "0.254802",
           "contribution_pct": "0.025480"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.147514",
-          "allocated_value": "950.78",
-          "pnl_usd": "755.76",
+          "allocated_value": "948.64",
+          "pnl_usd": "754.05",
           "return_pct": "0.216749",
           "contribution_pct": "0.021675"
         }
@@ -2759,8 +2759,8 @@
       "timestamp": 1753228800000,
       "week_number": 30,
       "portfolio": {
-        "start_value": "11218.60",
-        "end_value": "10426.51",
+        "start_value": "11193.34",
+        "end_value": "10403.03",
         "gross_return_pct": "-0.070605",
         "net_return_pct": "-0.070605",
         "total_fees": "0.00",
@@ -2771,80 +2771,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095469",
-          "allocated_value": "1121.86",
-          "pnl_usd": "-194.53",
+          "allocated_value": "1119.33",
+          "pnl_usd": "-194.09",
           "return_pct": "-0.134167",
           "contribution_pct": "-0.013417"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.064731",
-          "allocated_value": "1121.86",
-          "pnl_usd": "-438.57",
+          "allocated_value": "1119.33",
+          "pnl_usd": "-437.58",
           "return_pct": "-0.059073",
           "contribution_pct": "-0.005907"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.108220",
-          "allocated_value": "1121.86",
-          "pnl_usd": "179.51",
+          "allocated_value": "1119.33",
+          "pnl_usd": "179.10",
           "return_pct": "0.071895",
           "contribution_pct": "0.007190"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.114506",
-          "allocated_value": "1121.86",
-          "pnl_usd": "140.26",
+          "allocated_value": "1119.33",
+          "pnl_usd": "139.94",
           "return_pct": "-0.017502",
           "contribution_pct": "-0.001750"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.076543",
-          "allocated_value": "1121.86",
-          "pnl_usd": "-412.64",
+          "allocated_value": "1119.33",
+          "pnl_usd": "-411.71",
           "return_pct": "-0.174081",
           "contribution_pct": "-0.017408"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100227",
-          "allocated_value": "1121.86",
-          "pnl_usd": "16.01",
+          "allocated_value": "1119.33",
+          "pnl_usd": "15.98",
           "return_pct": "0.011972",
           "contribution_pct": "0.001197"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087689",
-          "allocated_value": "1121.86",
-          "pnl_usd": "-230.88",
+          "allocated_value": "1119.33",
+          "pnl_usd": "-230.36",
           "return_pct": "-0.094301",
           "contribution_pct": "-0.009430"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103442",
-          "allocated_value": "1121.86",
-          "pnl_usd": "-70.33",
+          "allocated_value": "1119.33",
+          "pnl_usd": "-70.17",
           "return_pct": "-0.093878",
           "contribution_pct": "-0.009388"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097056",
-          "allocated_value": "1121.86",
-          "pnl_usd": "-161.85",
+          "allocated_value": "1119.33",
+          "pnl_usd": "-161.49",
           "return_pct": "-0.118319",
           "contribution_pct": "-0.011832"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.152117",
-          "allocated_value": "1121.86",
-          "pnl_usd": "380.94",
+          "allocated_value": "1119.33",
+          "pnl_usd": "380.08",
           "return_pct": "-0.119387",
           "contribution_pct": "-0.011939"
         }
@@ -2854,8 +2854,8 @@
       "timestamp": 1753833600000,
       "week_number": 31,
       "portfolio": {
-        "start_value": "10426.51",
-        "end_value": "9959.75",
+        "start_value": "10403.03",
+        "end_value": "9937.32",
         "gross_return_pct": "-0.044767",
         "net_return_pct": "-0.044767",
         "total_fees": "0.00",
@@ -2866,80 +2866,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088940",
-          "allocated_value": "1042.65",
-          "pnl_usd": "-182.85",
+          "allocated_value": "1040.30",
+          "pnl_usd": "-182.43",
           "return_pct": "-0.072816",
           "contribution_pct": "-0.007282"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.065534",
-          "allocated_value": "1042.65",
-          "pnl_usd": "-428.33",
+          "allocated_value": "1040.30",
+          "pnl_usd": "-427.37",
           "return_pct": "-0.100944",
           "contribution_pct": "-0.010094"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124813",
-          "allocated_value": "1042.65",
-          "pnl_usd": "229.63",
+          "allocated_value": "1040.30",
+          "pnl_usd": "229.11",
           "return_pct": "-0.022352",
           "contribution_pct": "-0.002235"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.121049",
-          "allocated_value": "1042.65",
-          "pnl_usd": "178.58",
+          "allocated_value": "1040.30",
+          "pnl_usd": "178.18",
           "return_pct": "-0.032395",
           "contribution_pct": "-0.003239"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.068021",
-          "allocated_value": "1042.65",
-          "pnl_usd": "-409.74",
+          "allocated_value": "1040.30",
+          "pnl_usd": "-408.82",
           "return_pct": "-0.107597",
           "contribution_pct": "-0.010760"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.109133",
-          "allocated_value": "1042.65",
-          "pnl_usd": "40.72",
+          "allocated_value": "1040.30",
+          "pnl_usd": "40.63",
           "return_pct": "-0.047900",
           "contribution_pct": "-0.004790"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.085453",
-          "allocated_value": "1042.65",
-          "pnl_usd": "-223.34",
+          "allocated_value": "1040.30",
+          "pnl_usd": "-222.83",
           "return_pct": "-0.080433",
           "contribution_pct": "-0.008043"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100852",
-          "allocated_value": "1042.65",
-          "pnl_usd": "123.06",
+          "allocated_value": "1040.30",
+          "pnl_usd": "122.78",
           "return_pct": "0.108581",
           "contribution_pct": "0.010858"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.092074",
-          "allocated_value": "1042.65",
-          "pnl_usd": "-174.60",
+          "allocated_value": "1040.30",
+          "pnl_usd": "-174.20",
           "return_pct": "-0.095784",
           "contribution_pct": "-0.009578"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.144133",
-          "allocated_value": "1042.65",
-          "pnl_usd": "380.11",
+          "allocated_value": "1040.30",
+          "pnl_usd": "379.26",
           "return_pct": "-0.053257",
           "contribution_pct": "-0.005326"
         }
@@ -2949,8 +2949,8 @@
       "timestamp": 1754438400000,
       "week_number": 32,
       "portfolio": {
-        "start_value": "9959.75",
-        "end_value": "11551.92",
+        "start_value": "9937.32",
+        "end_value": "11525.91",
         "gross_return_pct": "0.159861",
         "net_return_pct": "0.159861",
         "total_fees": "0.00",
@@ -2961,7 +2961,7 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.086328",
-          "allocated_value": "995.97",
+          "allocated_value": "993.73",
           "pnl_usd": "0.06",
           "return_pct": "0.158446",
           "contribution_pct": "0.015845"
@@ -2969,72 +2969,72 @@
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.061680",
-          "allocated_value": "995.97",
-          "pnl_usd": "-304.27",
+          "allocated_value": "993.73",
+          "pnl_usd": "-303.59",
           "return_pct": "0.125970",
           "contribution_pct": "0.012597"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.127742",
-          "allocated_value": "995.97",
-          "pnl_usd": "432.08",
+          "allocated_value": "993.73",
+          "pnl_usd": "431.10",
           "return_pct": "0.122437",
           "contribution_pct": "0.012244"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.122617",
-          "allocated_value": "995.97",
-          "pnl_usd": "289.42",
+          "allocated_value": "993.73",
+          "pnl_usd": "288.77",
           "return_pct": "0.052545",
           "contribution_pct": "0.005255"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.063547",
-          "allocated_value": "995.97",
-          "pnl_usd": "-249.44",
+          "allocated_value": "993.73",
+          "pnl_usd": "-248.88",
           "return_pct": "0.179530",
           "contribution_pct": "0.017953"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.108775",
-          "allocated_value": "995.97",
-          "pnl_usd": "380.72",
+          "allocated_value": "993.73",
+          "pnl_usd": "379.87",
           "return_pct": "0.270758",
           "contribution_pct": "0.027076"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.082263",
-          "allocated_value": "995.97",
-          "pnl_usd": "183.96",
+          "allocated_value": "993.73",
+          "pnl_usd": "183.55",
           "return_pct": "0.440151",
           "contribution_pct": "0.044015"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.117042",
-          "allocated_value": "995.97",
-          "pnl_usd": "268.02",
+          "allocated_value": "993.73",
+          "pnl_usd": "267.41",
           "return_pct": "0.084310",
           "contribution_pct": "0.008431"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087156",
-          "allocated_value": "995.97",
-          "pnl_usd": "18.26",
+          "allocated_value": "993.73",
+          "pnl_usd": "18.22",
           "return_pct": "0.168404",
           "contribution_pct": "0.016840"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.142851",
-          "allocated_value": "995.97",
-          "pnl_usd": "573.36",
+          "allocated_value": "993.73",
+          "pnl_usd": "572.07",
           "return_pct": "0.103019",
           "contribution_pct": "0.010302"
         }
@@ -3044,8 +3044,8 @@
       "timestamp": 1755043200000,
       "week_number": 33,
       "portfolio": {
-        "start_value": "11551.92",
-        "end_value": "10564.88",
+        "start_value": "11525.91",
+        "end_value": "10541.09",
         "gross_return_pct": "-0.085444",
         "net_return_pct": "-0.085444",
         "total_fees": "0.00",
@@ -3056,80 +3056,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.086223",
-          "allocated_value": "1155.19",
-          "pnl_usd": "-152.64",
+          "allocated_value": "1152.59",
+          "pnl_usd": "-152.29",
           "return_pct": "0.006541",
           "contribution_pct": "0.000654"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.059878",
-          "allocated_value": "1155.19",
-          "pnl_usd": "-527.98",
+          "allocated_value": "1152.59",
+          "pnl_usd": "-526.79",
           "return_pct": "-0.093231",
           "contribution_pct": "-0.009323"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.123620",
-          "allocated_value": "1155.19",
-          "pnl_usd": "110.26",
+          "allocated_value": "1152.59",
+          "pnl_usd": "110.01",
           "return_pct": "-0.113863",
           "contribution_pct": "-0.011386"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111271",
-          "allocated_value": "1155.19",
-          "pnl_usd": "52.56",
+          "allocated_value": "1152.59",
+          "pnl_usd": "52.44",
           "return_pct": "-0.060407",
           "contribution_pct": "-0.006041"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.064624",
-          "allocated_value": "1155.19",
-          "pnl_usd": "-491.84",
+          "allocated_value": "1152.59",
+          "pnl_usd": "-490.73",
           "return_pct": "-0.111427",
           "contribution_pct": "-0.011143"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.119175",
-          "allocated_value": "1155.19",
-          "pnl_usd": "67.16",
+          "allocated_value": "1152.59",
+          "pnl_usd": "67.00",
           "return_pct": "-0.112116",
           "contribution_pct": "-0.011212"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.102142",
-          "allocated_value": "1155.19",
-          "pnl_usd": "22.69",
+          "allocated_value": "1152.59",
+          "pnl_usd": "22.64",
           "return_pct": "-0.001738",
           "contribution_pct": "-0.000174"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.109418",
-          "allocated_value": "1155.19",
-          "pnl_usd": "-63.24",
+          "allocated_value": "1152.59",
+          "pnl_usd": "-63.10",
           "return_pct": "-0.136109",
           "contribution_pct": "-0.013611"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087798",
-          "allocated_value": "1155.19",
-          "pnl_usd": "-222.96",
+          "allocated_value": "1152.59",
+          "pnl_usd": "-222.46",
           "return_pct": "-0.080856",
           "contribution_pct": "-0.008086"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.135851",
-          "allocated_value": "1155.19",
-          "pnl_usd": "218.96",
+          "allocated_value": "1152.59",
+          "pnl_usd": "218.46",
           "return_pct": "-0.124376",
           "contribution_pct": "-0.012438"
         }
@@ -3139,8 +3139,8 @@
       "timestamp": 1755648000000,
       "week_number": 34,
       "portfolio": {
-        "start_value": "10564.88",
-        "end_value": "11046.57",
+        "start_value": "10541.09",
+        "end_value": "11021.69",
         "gross_return_pct": "0.045593",
         "net_return_pct": "0.045593",
         "total_fees": "0.00",
@@ -3151,80 +3151,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094895",
-          "allocated_value": "1056.49",
-          "pnl_usd": "-30.00",
+          "allocated_value": "1054.11",
+          "pnl_usd": "-29.94",
           "return_pct": "0.023869",
           "contribution_pct": "0.002387"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.059368",
-          "allocated_value": "1056.49",
-          "pnl_usd": "-378.81",
+          "allocated_value": "1054.11",
+          "pnl_usd": "-377.95",
           "return_pct": "0.080465",
           "contribution_pct": "0.008046"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.119779",
-          "allocated_value": "1056.49",
-          "pnl_usd": "214.20",
+          "allocated_value": "1054.11",
+          "pnl_usd": "213.72",
           "return_pct": "0.004138",
           "contribution_pct": "0.000414"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.114318",
-          "allocated_value": "1056.49",
-          "pnl_usd": "139.86",
+          "allocated_value": "1054.11",
+          "pnl_usd": "139.55",
           "return_pct": "-0.009442",
           "contribution_pct": "-0.000944"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.062788",
-          "allocated_value": "1056.49",
-          "pnl_usd": "-364.60",
+          "allocated_value": "1054.11",
+          "pnl_usd": "-363.78",
           "return_pct": "0.043026",
           "contribution_pct": "0.004303"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.115699",
-          "allocated_value": "1056.49",
-          "pnl_usd": "323.79",
+          "allocated_value": "1054.11",
+          "pnl_usd": "323.06",
           "return_pct": "0.129198",
           "contribution_pct": "0.012920"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111491",
-          "allocated_value": "1056.49",
-          "pnl_usd": "163.06",
+          "allocated_value": "1054.11",
+          "pnl_usd": "162.69",
           "return_pct": "0.035367",
           "contribution_pct": "0.003537"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103357",
-          "allocated_value": "1056.49",
-          "pnl_usd": "43.51",
+          "allocated_value": "1054.11",
+          "pnl_usd": "43.41",
           "return_pct": "0.007367",
           "contribution_pct": "0.000737"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088239",
-          "allocated_value": "1056.49",
-          "pnl_usd": "-20.19",
+          "allocated_value": "1054.11",
+          "pnl_usd": "-20.14",
           "return_pct": "0.111635",
           "contribution_pct": "0.011163"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.130067",
-          "allocated_value": "1056.49",
-          "pnl_usd": "390.87",
+          "allocated_value": "1054.11",
+          "pnl_usd": "389.99",
           "return_pct": "0.053279",
           "contribution_pct": "0.005328"
         }
@@ -3234,8 +3234,8 @@
       "timestamp": 1756252800000,
       "week_number": 35,
       "portfolio": {
-        "start_value": "11046.57",
-        "end_value": "10934.88",
+        "start_value": "11021.69",
+        "end_value": "10910.25",
         "gross_return_pct": "-0.010110",
         "net_return_pct": "-0.010110",
         "total_fees": "0.00",
@@ -3246,80 +3246,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.092923",
-          "allocated_value": "1104.66",
-          "pnl_usd": "-115.49",
+          "allocated_value": "1102.17",
+          "pnl_usd": "-115.23",
           "return_pct": "-0.036353",
           "contribution_pct": "-0.003635"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.061348",
-          "allocated_value": "1104.66",
-          "pnl_usd": "-418.56",
+          "allocated_value": "1102.17",
+          "pnl_usd": "-417.62",
           "return_pct": "0.012412",
           "contribution_pct": "0.001241"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.115030",
-          "allocated_value": "1104.66",
-          "pnl_usd": "243.91",
+          "allocated_value": "1102.17",
+          "pnl_usd": "243.36",
           "return_pct": "0.061286",
           "contribution_pct": "0.006129"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.108300",
-          "allocated_value": "1104.66",
-          "pnl_usd": "85.91",
+          "allocated_value": "1102.17",
+          "pnl_usd": "85.72",
           "return_pct": "-0.004831",
           "contribution_pct": "-0.000483"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.062634",
-          "allocated_value": "1104.66",
-          "pnl_usd": "-424.04",
+          "allocated_value": "1102.17",
+          "pnl_usd": "-423.09",
           "return_pct": "-0.016299",
           "contribution_pct": "-0.001630"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124950",
-          "allocated_value": "1104.66",
-          "pnl_usd": "193.10",
+          "allocated_value": "1102.17",
+          "pnl_usd": "192.66",
           "return_pct": "-0.059785",
           "contribution_pct": "-0.005979"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.110400",
-          "allocated_value": "1104.66",
-          "pnl_usd": "69.98",
+          "allocated_value": "1102.17",
+          "pnl_usd": "69.82",
           "return_pct": "-0.036824",
           "contribution_pct": "-0.003682"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.099578",
-          "allocated_value": "1104.66",
-          "pnl_usd": "-21.24",
+          "allocated_value": "1102.17",
+          "pnl_usd": "-21.19",
           "return_pct": "-0.015067",
           "contribution_pct": "-0.001507"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093812",
-          "allocated_value": "1104.66",
-          "pnl_usd": "4.44",
+          "allocated_value": "1102.17",
+          "pnl_usd": "4.43",
           "return_pct": "0.070251",
           "contribution_pct": "0.007025"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.131024",
-          "allocated_value": "1104.66",
-          "pnl_usd": "270.31",
+          "allocated_value": "1102.17",
+          "pnl_usd": "269.70",
           "return_pct": "-0.050020",
           "contribution_pct": "-0.005002"
         }
@@ -3329,8 +3329,8 @@
       "timestamp": 1756857600000,
       "week_number": 36,
       "portfolio": {
-        "start_value": "10934.88",
-        "end_value": "11143.78",
+        "start_value": "10910.25",
+        "end_value": "11118.68",
         "gross_return_pct": "0.019104",
         "net_return_pct": "0.019104",
         "total_fees": "0.00",
@@ -3341,80 +3341,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.090460",
-          "allocated_value": "1093.49",
-          "pnl_usd": "-68.54",
+          "allocated_value": "1091.03",
+          "pnl_usd": "-68.39",
           "return_pct": "0.036168",
           "contribution_pct": "0.003617"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.062744",
-          "allocated_value": "1093.49",
-          "pnl_usd": "-366.18",
+          "allocated_value": "1091.03",
+          "pnl_usd": "-365.35",
           "return_pct": "0.060074",
           "contribution_pct": "0.006007"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.123327",
-          "allocated_value": "1093.49",
-          "pnl_usd": "246.68",
+          "allocated_value": "1091.03",
+          "pnl_usd": "246.12",
           "return_pct": "-0.006226",
           "contribution_pct": "-0.000623"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.108878",
-          "allocated_value": "1093.49",
-          "pnl_usd": "100.28",
+          "allocated_value": "1091.03",
+          "pnl_usd": "100.05",
           "return_pct": "0.002685",
           "contribution_pct": "0.000268"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.062242",
-          "allocated_value": "1093.49",
-          "pnl_usd": "-331.53",
+          "allocated_value": "1091.03",
+          "pnl_usd": "-330.78",
           "return_pct": "0.119520",
           "contribution_pct": "0.011952"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.118680",
-          "allocated_value": "1093.49",
-          "pnl_usd": "199.29",
+          "allocated_value": "1091.03",
+          "pnl_usd": "198.84",
           "return_pct": "-0.003832",
           "contribution_pct": "-0.000383"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.107421",
-          "allocated_value": "1093.49",
-          "pnl_usd": "59.19",
+          "allocated_value": "1091.03",
+          "pnl_usd": "59.06",
           "return_pct": "-0.018690",
           "contribution_pct": "-0.001869"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.099079",
-          "allocated_value": "1093.49",
-          "pnl_usd": "-8.42",
+          "allocated_value": "1091.03",
+          "pnl_usd": "-8.40",
           "return_pct": "0.001521",
           "contribution_pct": "0.000152"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.101428",
-          "allocated_value": "1093.49",
-          "pnl_usd": "55.82",
+          "allocated_value": "1091.03",
+          "pnl_usd": "55.70",
           "return_pct": "0.036254",
           "contribution_pct": "0.003625"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.125741",
-          "allocated_value": "1093.49",
-          "pnl_usd": "322.31",
+          "allocated_value": "1091.03",
+          "pnl_usd": "321.58",
           "return_pct": "0.029698",
           "contribution_pct": "0.002970"
         }
@@ -3424,8 +3424,8 @@
       "timestamp": 1757462400000,
       "week_number": 37,
       "portfolio": {
-        "start_value": "11143.78",
-        "end_value": "11728.15",
+        "start_value": "11118.68",
+        "end_value": "11701.73",
         "gross_return_pct": "0.052438",
         "net_return_pct": "0.052438",
         "total_fees": "0.00",
@@ -3436,63 +3436,63 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091974",
-          "allocated_value": "1114.38",
-          "pnl_usd": "-71.31",
+          "allocated_value": "1111.87",
+          "pnl_usd": "-71.15",
           "return_pct": "0.017684",
           "contribution_pct": "0.001768"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.065266",
-          "allocated_value": "1114.38",
-          "pnl_usd": "-270.99",
+          "allocated_value": "1111.87",
+          "pnl_usd": "-270.38",
           "return_pct": "0.159599",
           "contribution_pct": "0.015960"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.120261",
-          "allocated_value": "1114.38",
-          "pnl_usd": "267.29",
+          "allocated_value": "1111.87",
+          "pnl_usd": "266.68",
           "return_pct": "0.030965",
           "contribution_pct": "0.003096"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.107124",
-          "allocated_value": "1114.38",
-          "pnl_usd": "135.96",
+          "allocated_value": "1111.87",
+          "pnl_usd": "135.65",
           "return_pct": "0.047388",
           "contribution_pct": "0.004739"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.068375",
-          "allocated_value": "1114.38",
-          "pnl_usd": "-258.91",
+          "allocated_value": "1111.87",
+          "pnl_usd": "-258.32",
           "return_pct": "0.122724",
           "contribution_pct": "0.012272"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.116009",
-          "allocated_value": "1114.38",
-          "pnl_usd": "236.22",
+          "allocated_value": "1111.87",
+          "pnl_usd": "235.69",
           "return_pct": "0.044725",
           "contribution_pct": "0.004472"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103437",
-          "allocated_value": "1114.38",
-          "pnl_usd": "60.41",
+          "allocated_value": "1111.87",
+          "pnl_usd": "60.27",
           "return_pct": "0.019177",
           "contribution_pct": "0.001918"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.097370",
-          "allocated_value": "1114.38",
+          "allocated_value": "1111.87",
           "pnl_usd": "1.03",
           "return_pct": "0.027959",
           "contribution_pct": "0.002796"
@@ -3500,16 +3500,16 @@
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103135",
-          "allocated_value": "1114.38",
-          "pnl_usd": "139.58",
+          "allocated_value": "1111.87",
+          "pnl_usd": "139.27",
           "return_pct": "0.091056",
           "contribution_pct": "0.009106"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.127048",
-          "allocated_value": "1114.38",
-          "pnl_usd": "345.09",
+          "allocated_value": "1111.87",
+          "pnl_usd": "344.31",
           "return_pct": "0.030844",
           "contribution_pct": "0.003084"
         }
@@ -3519,8 +3519,8 @@
       "timestamp": 1758067200000,
       "week_number": 38,
       "portfolio": {
-        "start_value": "11728.15",
-        "end_value": "10971.37",
+        "start_value": "11701.73",
+        "end_value": "10946.66",
         "gross_return_pct": "-0.064526",
         "net_return_pct": "-0.064526",
         "total_fees": "0.00",
@@ -3531,80 +3531,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088937",
-          "allocated_value": "1172.81",
-          "pnl_usd": "-217.76",
+          "allocated_value": "1170.17",
+          "pnl_usd": "-217.27",
           "return_pct": "-0.084384",
           "contribution_pct": "-0.008438"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.071911",
-          "allocated_value": "1172.81",
-          "pnl_usd": "-230.73",
+          "allocated_value": "1170.17",
+          "pnl_usd": "-230.21",
           "return_pct": "0.117021",
           "contribution_pct": "0.011702"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.117808",
-          "allocated_value": "1172.81",
-          "pnl_usd": "111.76",
+          "allocated_value": "1170.17",
+          "pnl_usd": "111.51",
           "return_pct": "-0.070271",
           "contribution_pct": "-0.007027"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106610",
-          "allocated_value": "1172.81",
-          "pnl_usd": "25.99",
+          "allocated_value": "1170.17",
+          "pnl_usd": "25.93",
           "return_pct": "-0.041216",
           "contribution_pct": "-0.004122"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.072942",
-          "allocated_value": "1172.81",
-          "pnl_usd": "-421.75",
+          "allocated_value": "1170.17",
+          "pnl_usd": "-420.80",
           "return_pct": "-0.122047",
           "contribution_pct": "-0.012205"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.115159",
-          "allocated_value": "1172.81",
-          "pnl_usd": "76.54",
+          "allocated_value": "1170.17",
+          "pnl_usd": "76.37",
           "return_pct": "-0.074959",
           "contribution_pct": "-0.007496"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100168",
-          "allocated_value": "1172.81",
-          "pnl_usd": "-96.55",
+          "allocated_value": "1170.17",
+          "pnl_usd": "-96.33",
           "return_pct": "-0.083862",
           "contribution_pct": "-0.008386"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095105",
-          "allocated_value": "1172.81",
-          "pnl_usd": "-144.35",
+          "allocated_value": "1170.17",
+          "pnl_usd": "-144.02",
           "return_pct": "-0.077946",
           "contribution_pct": "-0.007795"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.106919",
-          "allocated_value": "1172.81",
-          "pnl_usd": "-44.24",
+          "allocated_value": "1170.17",
+          "pnl_usd": "-44.14",
           "return_pct": "-0.099996",
           "contribution_pct": "-0.010000"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124441",
-          "allocated_value": "1172.81",
-          "pnl_usd": "184.33",
+          "allocated_value": "1170.17",
+          "pnl_usd": "183.91",
           "return_pct": "-0.070112",
           "contribution_pct": "-0.007011"
         }
@@ -3614,8 +3614,8 @@
       "timestamp": 1758672000000,
       "week_number": 39,
       "portfolio": {
-        "start_value": "10971.37",
-        "end_value": "10868.79",
+        "start_value": "10946.66",
+        "end_value": "10844.31",
         "gross_return_pct": "-0.009350",
         "net_return_pct": "-0.009350",
         "total_fees": "0.00",
@@ -3626,80 +3626,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087049",
-          "allocated_value": "1097.14",
-          "pnl_usd": "-140.67",
+          "allocated_value": "1094.67",
+          "pnl_usd": "-140.35",
           "return_pct": "0.001488",
           "contribution_pct": "0.000149"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.085867",
-          "allocated_value": "1097.14",
-          "pnl_usd": "-255.15",
+          "allocated_value": "1094.67",
+          "pnl_usd": "-254.58",
           "return_pct": "-0.106250",
           "contribution_pct": "-0.010625"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.117084",
-          "allocated_value": "1097.14",
-          "pnl_usd": "196.73",
+          "allocated_value": "1094.67",
+          "pnl_usd": "196.29",
           "return_pct": "0.007237",
           "contribution_pct": "0.000724"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.109266",
-          "allocated_value": "1097.14",
-          "pnl_usd": "123.61",
+          "allocated_value": "1094.67",
+          "pnl_usd": "123.33",
           "return_pct": "0.018305",
           "contribution_pct": "0.001831"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.068457",
-          "allocated_value": "1097.14",
-          "pnl_usd": "-359.31",
+          "allocated_value": "1094.67",
+          "pnl_usd": "-358.51",
           "return_pct": "-0.017630",
           "contribution_pct": "-0.001763"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.113874",
-          "allocated_value": "1097.14",
-          "pnl_usd": "146.46",
+          "allocated_value": "1094.67",
+          "pnl_usd": "146.13",
           "return_pct": "-0.004610",
           "contribution_pct": "-0.000461"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.098098",
-          "allocated_value": "1097.14",
-          "pnl_usd": "-30.97",
+          "allocated_value": "1094.67",
+          "pnl_usd": "-30.90",
           "return_pct": "-0.009386",
           "contribution_pct": "-0.000939"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093741",
-          "allocated_value": "1097.14",
-          "pnl_usd": "-61.11",
+          "allocated_value": "1094.67",
+          "pnl_usd": "-60.97",
           "return_pct": "0.007351",
           "contribution_pct": "0.000735"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.102865",
-          "allocated_value": "1097.14",
-          "pnl_usd": "7.31",
+          "allocated_value": "1094.67",
+          "pnl_usd": "7.29",
           "return_pct": "-0.021377",
           "contribution_pct": "-0.002138"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.123698",
-          "allocated_value": "1097.14",
-          "pnl_usd": "270.52",
+          "allocated_value": "1094.67",
+          "pnl_usd": "269.92",
           "return_pct": "0.007752",
           "contribution_pct": "0.000775"
         }
@@ -3709,8 +3709,8 @@
       "timestamp": 1759276800000,
       "week_number": 40,
       "portfolio": {
-        "start_value": "10868.79",
-        "end_value": "11261.63",
+        "start_value": "10844.31",
+        "end_value": "11236.27",
         "gross_return_pct": "0.036144",
         "net_return_pct": "0.036144",
         "total_fees": "0.00",
@@ -3721,80 +3721,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088002",
-          "allocated_value": "1086.88",
-          "pnl_usd": "-115.01",
+          "allocated_value": "1084.43",
+          "pnl_usd": "-114.75",
           "return_pct": "0.016101",
           "contribution_pct": "0.001610"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.077468",
-          "allocated_value": "1086.88",
-          "pnl_usd": "-303.49",
+          "allocated_value": "1084.43",
+          "pnl_usd": "-302.81",
           "return_pct": "-0.069597",
           "contribution_pct": "-0.006960"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.119044",
-          "allocated_value": "1086.88",
-          "pnl_usd": "243.37",
+          "allocated_value": "1084.43",
+          "pnl_usd": "242.82",
           "return_pct": "0.028115",
           "contribution_pct": "0.002812"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.112317",
-          "allocated_value": "1086.88",
-          "pnl_usd": "212.27",
+          "allocated_value": "1084.43",
+          "pnl_usd": "211.79",
           "return_pct": "0.064227",
           "contribution_pct": "0.006423"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.067885",
-          "allocated_value": "1086.88",
-          "pnl_usd": "-304.55",
+          "allocated_value": "1084.43",
+          "pnl_usd": "-303.86",
           "return_pct": "0.060321",
           "contribution_pct": "0.006032"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.114419",
-          "allocated_value": "1086.88",
-          "pnl_usd": "247.86",
+          "allocated_value": "1084.43",
+          "pnl_usd": "247.30",
           "return_pct": "0.073283",
           "contribution_pct": "0.007328"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.098094",
-          "allocated_value": "1086.88",
-          "pnl_usd": "4.19",
+          "allocated_value": "1084.43",
+          "pnl_usd": "4.18",
           "return_pct": "0.023359",
           "contribution_pct": "0.002336"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095321",
-          "allocated_value": "1086.88",
-          "pnl_usd": "46.94",
+          "allocated_value": "1084.43",
+          "pnl_usd": "46.84",
           "return_pct": "0.094396",
           "contribution_pct": "0.009440"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.101616",
-          "allocated_value": "1086.88",
-          "pnl_usd": "77.40",
+          "allocated_value": "1084.43",
+          "pnl_usd": "77.23",
           "return_pct": "0.054180",
           "contribution_pct": "0.005418"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.125834",
-          "allocated_value": "1086.88",
-          "pnl_usd": "283.86",
+          "allocated_value": "1084.43",
+          "pnl_usd": "283.22",
           "return_pct": "0.002248",
           "contribution_pct": "0.000225"
         }
@@ -3804,8 +3804,8 @@
       "timestamp": 1759881600000,
       "week_number": 41,
       "portfolio": {
-        "start_value": "11261.63",
-        "end_value": "9976.92",
+        "start_value": "11236.27",
+        "end_value": "9954.45",
         "gross_return_pct": "-0.114078",
         "net_return_pct": "-0.114078",
         "total_fees": "0.00",
@@ -3816,80 +3816,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.086299",
-          "allocated_value": "1126.16",
-          "pnl_usd": "-298.11",
+          "allocated_value": "1123.63",
+          "pnl_usd": "-297.43",
           "return_pct": "-0.147977",
           "contribution_pct": "-0.014798"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.069562",
-          "allocated_value": "1126.16",
-          "pnl_usd": "-488.57",
+          "allocated_value": "1123.63",
+          "pnl_usd": "-487.47",
           "return_pct": "-0.186113",
           "contribution_pct": "-0.018611"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.118122",
-          "allocated_value": "1126.16",
-          "pnl_usd": "115.25",
+          "allocated_value": "1123.63",
+          "pnl_usd": "114.99",
           "return_pct": "-0.066779",
           "contribution_pct": "-0.006678"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.115361",
-          "allocated_value": "1126.16",
-          "pnl_usd": "83.93",
+          "allocated_value": "1123.63",
+          "pnl_usd": "83.74",
           "return_pct": "-0.068552",
           "contribution_pct": "-0.006855"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.069469",
-          "allocated_value": "1126.16",
-          "pnl_usd": "-478.62",
+          "allocated_value": "1123.63",
+          "pnl_usd": "-477.54",
           "return_pct": "-0.172288",
           "contribution_pct": "-0.017229"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.118521",
-          "allocated_value": "1126.16",
-          "pnl_usd": "111.52",
+          "allocated_value": "1123.63",
+          "pnl_usd": "111.27",
           "return_pct": "-0.072711",
           "contribution_pct": "-0.007271"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.096884",
-          "allocated_value": "1126.16",
-          "pnl_usd": "-170.47",
+          "allocated_value": "1123.63",
+          "pnl_usd": "-170.09",
           "return_pct": "-0.124078",
           "contribution_pct": "-0.012408"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100680",
-          "allocated_value": "1126.16",
-          "pnl_usd": "-182.12",
+          "allocated_value": "1123.63",
+          "pnl_usd": "-181.71",
           "return_pct": "-0.167379",
           "contribution_pct": "-0.016738"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103385",
-          "allocated_value": "1126.16",
-          "pnl_usd": "-54.57",
+          "allocated_value": "1123.63",
+          "pnl_usd": "-54.45",
           "return_pct": "-0.079615",
           "contribution_pct": "-0.007961"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.121717",
-          "allocated_value": "1126.16",
-          "pnl_usd": "77.06",
+          "allocated_value": "1123.63",
+          "pnl_usd": "76.88",
           "return_pct": "-0.122209",
           "contribution_pct": "-0.012221"
         }
@@ -3899,8 +3899,8 @@
       "timestamp": 1760486400000,
       "week_number": 42,
       "portfolio": {
-        "start_value": "9976.92",
-        "end_value": "9280.29",
+        "start_value": "9954.45",
+        "end_value": "9259.39",
         "gross_return_pct": "-0.069825",
         "net_return_pct": "-0.069825",
         "total_fees": "0.00",
@@ -3911,80 +3911,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.082997",
-          "allocated_value": "997.69",
-          "pnl_usd": "-235.97",
+          "allocated_value": "995.45",
+          "pnl_usd": "-235.44",
           "return_pct": "-0.080114",
           "contribution_pct": "-0.008011"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.063906",
-          "allocated_value": "997.69",
-          "pnl_usd": "-449.83",
+          "allocated_value": "995.45",
+          "pnl_usd": "-448.81",
           "return_pct": "-0.140721",
           "contribution_pct": "-0.014072"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124429",
-          "allocated_value": "997.69",
-          "pnl_usd": "112.03",
+          "allocated_value": "995.45",
+          "pnl_usd": "111.78",
           "return_pct": "-0.106082",
           "contribution_pct": "-0.010608"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.121289",
-          "allocated_value": "997.69",
-          "pnl_usd": "161.95",
+          "allocated_value": "995.45",
+          "pnl_usd": "161.58",
           "return_pct": "-0.041692",
           "contribution_pct": "-0.004169"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.064904",
-          "allocated_value": "997.69",
-          "pnl_usd": "-382.11",
+          "allocated_value": "995.45",
+          "pnl_usd": "-381.25",
           "return_pct": "-0.049359",
           "contribution_pct": "-0.004936"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124055",
-          "allocated_value": "997.69",
-          "pnl_usd": "164.57",
+          "allocated_value": "995.45",
+          "pnl_usd": "164.20",
           "return_pct": "-0.060941",
           "contribution_pct": "-0.006094"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095790",
-          "allocated_value": "997.69",
-          "pnl_usd": "-116.82",
+          "allocated_value": "995.45",
+          "pnl_usd": "-116.55",
           "return_pct": "-0.078284",
           "contribution_pct": "-0.007828"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094623",
-          "allocated_value": "997.69",
-          "pnl_usd": "-101.63",
+          "allocated_value": "995.45",
+          "pnl_usd": "-101.40",
           "return_pct": "-0.050821",
           "contribution_pct": "-0.005082"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.107407",
-          "allocated_value": "997.69",
-          "pnl_usd": "-15.20",
+          "allocated_value": "995.45",
+          "pnl_usd": "-15.17",
           "return_pct": "-0.083144",
           "contribution_pct": "-0.008314"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.120600",
-          "allocated_value": "997.69",
-          "pnl_usd": "166.37",
+          "allocated_value": "995.45",
+          "pnl_usd": "166.00",
           "return_pct": "-0.032540",
           "contribution_pct": "-0.003254"
         }
@@ -3994,8 +3994,8 @@
       "timestamp": 1761091200000,
       "week_number": 43,
       "portfolio": {
-        "start_value": "9280.29",
-        "end_value": "9719.32",
+        "start_value": "9259.39",
+        "end_value": "9697.43",
         "gross_return_pct": "0.047308",
         "net_return_pct": "0.047308",
         "total_fees": "0.00",
@@ -4006,80 +4006,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.082079",
-          "allocated_value": "928.03",
-          "pnl_usd": "-162.76",
+          "allocated_value": "925.94",
+          "pnl_usd": "-162.39",
           "return_pct": "0.004666",
           "contribution_pct": "0.000467"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.059035",
-          "allocated_value": "928.03",
-          "pnl_usd": "-382.13",
+          "allocated_value": "925.94",
+          "pnl_usd": "-381.27",
           "return_pct": "-0.003582",
           "contribution_pct": "-0.000358"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.119579",
-          "allocated_value": "928.03",
-          "pnl_usd": "358.11",
+          "allocated_value": "925.94",
+          "pnl_usd": "357.31",
           "return_pct": "0.158976",
           "contribution_pct": "0.015898"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124957",
-          "allocated_value": "928.03",
-          "pnl_usd": "280.29",
+          "allocated_value": "925.94",
+          "pnl_usd": "279.66",
           "return_pct": "0.041979",
           "contribution_pct": "0.004198"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.066332",
-          "allocated_value": "928.03",
-          "pnl_usd": "-314.57",
+          "allocated_value": "925.94",
+          "pnl_usd": "-313.86",
           "return_pct": "-0.003448",
           "contribution_pct": "-0.000345"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.125239",
-          "allocated_value": "928.03",
-          "pnl_usd": "265.84",
+          "allocated_value": "925.94",
+          "pnl_usd": "265.25",
           "return_pct": "0.027201",
           "contribution_pct": "0.002720"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094919",
-          "allocated_value": "928.03",
-          "pnl_usd": "-36.70",
+          "allocated_value": "925.94",
+          "pnl_usd": "-36.62",
           "return_pct": "0.011866",
           "contribution_pct": "0.001187"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.096556",
-          "allocated_value": "928.03",
-          "pnl_usd": "8.55",
+          "allocated_value": "925.94",
+          "pnl_usd": "8.53",
           "return_pct": "0.045214",
           "contribution_pct": "0.004521"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.105869",
-          "allocated_value": "928.03",
-          "pnl_usd": "99.49",
+          "allocated_value": "925.94",
+          "pnl_usd": "99.26",
           "return_pct": "0.045827",
           "contribution_pct": "0.004583"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.125434",
-          "allocated_value": "928.03",
-          "pnl_usd": "322.89",
+          "allocated_value": "925.94",
+          "pnl_usd": "322.17",
           "return_pct": "0.074615",
           "contribution_pct": "0.007462"
         }
@@ -4089,8 +4089,8 @@
       "timestamp": 1761696000000,
       "week_number": 44,
       "portfolio": {
-        "start_value": "9719.32",
-        "end_value": "8196.92",
+        "start_value": "9697.43",
+        "end_value": "8178.46",
         "gross_return_pct": "-0.156637",
         "net_return_pct": "-0.156637",
         "total_fees": "0.00",
@@ -4101,80 +4101,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.078737",
-          "allocated_value": "971.93",
-          "pnl_usd": "-355.09",
+          "allocated_value": "969.74",
+          "pnl_usd": "-354.29",
           "return_pct": "-0.193963",
           "contribution_pct": "-0.019396"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.056167",
-          "allocated_value": "971.93",
-          "pnl_usd": "-523.88",
+          "allocated_value": "969.74",
+          "pnl_usd": "-522.70",
           "return_pct": "-0.179250",
           "contribution_pct": "-0.017925"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.132328",
-          "allocated_value": "971.93",
-          "pnl_usd": "135.30",
+          "allocated_value": "969.74",
+          "pnl_usd": "135.00",
           "return_pct": "-0.139106",
           "contribution_pct": "-0.013911"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124322",
-          "allocated_value": "971.93",
-          "pnl_usd": "113.97",
+          "allocated_value": "969.74",
+          "pnl_usd": "113.72",
           "return_pct": "-0.101310",
           "contribution_pct": "-0.010131"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.063117",
-          "allocated_value": "971.93",
-          "pnl_usd": "-458.16",
+          "allocated_value": "969.74",
+          "pnl_usd": "-457.13",
           "return_pct": "-0.162501",
           "contribution_pct": "-0.016250"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.122835",
-          "allocated_value": "971.93",
-          "pnl_usd": "13.84",
+          "allocated_value": "969.74",
+          "pnl_usd": "13.81",
           "return_pct": "-0.174310",
           "contribution_pct": "-0.017431"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.091707",
-          "allocated_value": "971.93",
-          "pnl_usd": "-237.54",
+          "allocated_value": "969.74",
+          "pnl_usd": "-237.00",
           "return_pct": "-0.176065",
           "contribution_pct": "-0.017606"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.096363",
-          "allocated_value": "971.93",
-          "pnl_usd": "-146.23",
+          "allocated_value": "969.74",
+          "pnl_usd": "-145.90",
           "return_pct": "-0.118390",
           "contribution_pct": "-0.011839"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.105719",
-          "allocated_value": "971.93",
-          "pnl_usd": "-151.92",
+          "allocated_value": "969.74",
+          "pnl_usd": "-151.58",
           "return_pct": "-0.201946",
           "contribution_pct": "-0.020195"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.128705",
-          "allocated_value": "971.93",
-          "pnl_usd": "87.31",
+          "allocated_value": "969.74",
+          "pnl_usd": "87.11",
           "return_pct": "-0.153232",
           "contribution_pct": "-0.015323"
         }
@@ -4184,8 +4184,8 @@
       "timestamp": 1762300800000,
       "week_number": 45,
       "portfolio": {
-        "start_value": "8196.92",
-        "end_value": "8670.38",
+        "start_value": "8178.46",
+        "end_value": "8650.85",
         "gross_return_pct": "0.057761",
         "net_return_pct": "0.057761",
         "total_fees": "0.00",
@@ -4196,80 +4196,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.075252",
-          "allocated_value": "819.69",
-          "pnl_usd": "-160.68",
+          "allocated_value": "817.85",
+          "pnl_usd": "-160.32",
           "return_pct": "0.068370",
           "contribution_pct": "0.006837"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.054661",
-          "allocated_value": "819.69",
-          "pnl_usd": "-342.76",
+          "allocated_value": "817.85",
+          "pnl_usd": "-341.99",
           "return_pct": "0.064456",
           "contribution_pct": "0.006446"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.135079",
-          "allocated_value": "819.69",
-          "pnl_usd": "346.41",
+          "allocated_value": "817.85",
+          "pnl_usd": "345.63",
           "return_pct": "0.053167",
           "contribution_pct": "0.005317"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.132477",
-          "allocated_value": "819.69",
-          "pnl_usd": "282.79",
+          "allocated_value": "817.85",
+          "pnl_usd": "282.15",
           "return_pct": "0.015266",
           "contribution_pct": "0.001527"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.062679",
-          "allocated_value": "819.69",
-          "pnl_usd": "-274.88",
+          "allocated_value": "817.85",
+          "pnl_usd": "-274.26",
           "return_pct": "0.060423",
           "contribution_pct": "0.006042"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.120261",
-          "allocated_value": "819.69",
-          "pnl_usd": "205.11",
+          "allocated_value": "817.85",
+          "pnl_usd": "204.65",
           "return_pct": "0.039596",
           "contribution_pct": "0.003960"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089594",
-          "allocated_value": "819.69",
-          "pnl_usd": "-55.44",
+          "allocated_value": "817.85",
+          "pnl_usd": "-55.31",
           "return_pct": "0.040654",
           "contribution_pct": "0.004065"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100733",
-          "allocated_value": "819.69",
-          "pnl_usd": "146.16",
+          "allocated_value": "817.85",
+          "pnl_usd": "145.83",
           "return_pct": "0.169738",
           "contribution_pct": "0.016974"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.100039",
-          "allocated_value": "819.69",
-          "pnl_usd": "-2.06",
+          "allocated_value": "817.85",
+          "pnl_usd": "-2.05",
           "return_pct": "-0.002903",
           "contribution_pct": "-0.000290"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.129225",
-          "allocated_value": "819.69",
-          "pnl_usd": "328.81",
+          "allocated_value": "817.85",
+          "pnl_usd": "328.07",
           "return_pct": "0.084267",
           "contribution_pct": "0.008427"
         }
@@ -4279,8 +4279,8 @@
       "timestamp": 1762905600000,
       "week_number": 46,
       "portfolio": {
-        "start_value": "8670.38",
-        "end_value": "8045.70",
+        "start_value": "8650.85",
+        "end_value": "8027.57",
         "gross_return_pct": "-0.072048",
         "net_return_pct": "-0.072048",
         "total_fees": "0.00",
@@ -4291,80 +4291,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.076007",
-          "allocated_value": "867.04",
-          "pnl_usd": "-304.22",
+          "allocated_value": "865.09",
+          "pnl_usd": "-303.53",
           "return_pct": "-0.145964",
           "contribution_pct": "-0.014596"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.055007",
-          "allocated_value": "867.04",
-          "pnl_usd": "-458.24",
+          "allocated_value": "865.09",
+          "pnl_usd": "-457.21",
           "return_pct": "-0.142857",
           "contribution_pct": "-0.014286"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.134492",
-          "allocated_value": "867.04",
-          "pnl_usd": "339.38",
+          "allocated_value": "865.09",
+          "pnl_usd": "338.62",
           "return_pct": "0.034578",
           "contribution_pct": "0.003458"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.127155",
-          "allocated_value": "867.04",
-          "pnl_usd": "127.33",
+          "allocated_value": "865.09",
+          "pnl_usd": "127.04",
           "return_pct": "-0.098069",
           "contribution_pct": "-0.009807"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.062836",
-          "allocated_value": "867.04",
-          "pnl_usd": "-355.04",
+          "allocated_value": "865.09",
+          "pnl_usd": "-354.24",
           "return_pct": "-0.060236",
           "contribution_pct": "-0.006024"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.118196",
-          "allocated_value": "867.04",
-          "pnl_usd": "69.27",
+          "allocated_value": "865.09",
+          "pnl_usd": "69.11",
           "return_pct": "-0.086356",
           "contribution_pct": "-0.008636"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088145",
-          "allocated_value": "867.04",
-          "pnl_usd": "-177.30",
+          "allocated_value": "865.09",
+          "pnl_usd": "-176.90",
           "return_pct": "-0.097500",
           "contribution_pct": "-0.009750"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.111397",
-          "allocated_value": "867.04",
-          "pnl_usd": "59.75",
+          "allocated_value": "865.09",
+          "pnl_usd": "59.62",
           "return_pct": "-0.040442",
           "contribution_pct": "-0.004044"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094302",
-          "allocated_value": "867.04",
-          "pnl_usd": "-123.05",
+          "allocated_value": "865.09",
+          "pnl_usd": "-122.78",
           "return_pct": "-0.090074",
           "contribution_pct": "-0.009007"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.132463",
-          "allocated_value": "867.04",
-          "pnl_usd": "197.44",
+          "allocated_value": "865.09",
+          "pnl_usd": "197.00",
           "return_pct": "-0.073158",
           "contribution_pct": "-0.007316"
         }
@@ -4374,8 +4374,8 @@
       "timestamp": 1763510400000,
       "week_number": 47,
       "portfolio": {
-        "start_value": "8045.70",
-        "end_value": "7692.61",
+        "start_value": "8027.57",
+        "end_value": "7675.28",
         "gross_return_pct": "-0.043885",
         "net_return_pct": "-0.043885",
         "total_fees": "0.00",
@@ -4386,80 +4386,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.069953",
-          "allocated_value": "804.57",
-          "pnl_usd": "-305.01",
+          "allocated_value": "802.76",
+          "pnl_usd": "-304.32",
           "return_pct": "-0.112397",
           "contribution_pct": "-0.011240"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.050809",
-          "allocated_value": "804.57",
-          "pnl_usd": "-407.27",
+          "allocated_value": "802.76",
+          "pnl_usd": "-406.35",
           "return_pct": "-0.028121",
           "contribution_pct": "-0.002812"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.149946",
-          "allocated_value": "804.57",
-          "pnl_usd": "411.77",
+          "allocated_value": "802.76",
+          "pnl_usd": "410.84",
           "return_pct": "0.008222",
           "contribution_pct": "0.000822"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.123590",
-          "allocated_value": "804.57",
-          "pnl_usd": "129.98",
+          "allocated_value": "802.76",
+          "pnl_usd": "129.68",
           "return_pct": "-0.060157",
           "contribution_pct": "-0.006016"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.063636",
-          "allocated_value": "804.57",
-          "pnl_usd": "-319.53",
+          "allocated_value": "802.76",
+          "pnl_usd": "-318.81",
           "return_pct": "-0.052651",
           "contribution_pct": "-0.005265"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.116373",
-          "allocated_value": "804.57",
-          "pnl_usd": "82.74",
+          "allocated_value": "802.76",
+          "pnl_usd": "82.56",
           "return_pct": "-0.052324",
           "contribution_pct": "-0.005232"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.085728",
-          "allocated_value": "804.57",
-          "pnl_usd": "-150.64",
+          "allocated_value": "802.76",
+          "pnl_usd": "-150.30",
           "return_pct": "-0.051914",
           "contribution_pct": "-0.005191"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.115191",
-          "allocated_value": "804.57",
-          "pnl_usd": "21.81",
+          "allocated_value": "802.76",
+          "pnl_usd": "21.76",
           "return_pct": "-0.108346",
           "contribution_pct": "-0.010835"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.092470",
-          "allocated_value": "804.57",
-          "pnl_usd": "-69.74",
+          "allocated_value": "802.76",
+          "pnl_usd": "-69.58",
           "return_pct": "-0.012303",
           "contribution_pct": "-0.001230"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.132304",
-          "allocated_value": "804.57",
-          "pnl_usd": "252.80",
+          "allocated_value": "802.76",
+          "pnl_usd": "252.23",
           "return_pct": "-0.006679",
           "contribution_pct": "-0.000668"
         }
@@ -4469,8 +4469,8 @@
       "timestamp": 1764115200000,
       "week_number": 48,
       "portfolio": {
-        "start_value": "7692.61",
-        "end_value": "7738.13",
+        "start_value": "7675.28",
+        "end_value": "7720.70",
         "gross_return_pct": "0.005917",
         "net_return_pct": "0.005917",
         "total_fees": "0.00",
@@ -4481,80 +4481,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.064940",
-          "allocated_value": "769.26",
-          "pnl_usd": "-255.60",
+          "allocated_value": "767.53",
+          "pnl_usd": "-255.03",
           "return_pct": "0.028219",
           "contribution_pct": "0.002822"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.051647",
-          "allocated_value": "769.26",
-          "pnl_usd": "-386.82",
+          "allocated_value": "767.53",
+          "pnl_usd": "-385.95",
           "return_pct": "-0.037403",
           "contribution_pct": "-0.003740"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.158118",
-          "allocated_value": "769.26",
-          "pnl_usd": "489.11",
+          "allocated_value": "767.53",
+          "pnl_usd": "488.01",
           "return_pct": "0.034553",
           "contribution_pct": "0.003455"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.121486",
-          "allocated_value": "769.26",
-          "pnl_usd": "207.91",
+          "allocated_value": "767.53",
+          "pnl_usd": "207.44",
           "return_pct": "0.045612",
           "contribution_pct": "0.004561"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.063053",
-          "allocated_value": "769.26",
-          "pnl_usd": "-307.09",
+          "allocated_value": "767.53",
+          "pnl_usd": "-306.40",
           "return_pct": "-0.047153",
           "contribution_pct": "-0.004715"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.115346",
-          "allocated_value": "769.26",
-          "pnl_usd": "129.58",
+          "allocated_value": "767.53",
+          "pnl_usd": "129.29",
           "return_pct": "0.012991",
           "contribution_pct": "0.001299"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.085008",
-          "allocated_value": "769.26",
-          "pnl_usd": "-95.08",
+          "allocated_value": "767.53",
+          "pnl_usd": "-94.86",
           "return_pct": "0.030973",
           "contribution_pct": "0.003097"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.107425",
-          "allocated_value": "769.26",
-          "pnl_usd": "33.66",
+          "allocated_value": "767.53",
+          "pnl_usd": "33.59",
           "return_pct": "-0.028384",
           "contribution_pct": "-0.002838"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.095525",
-          "allocated_value": "769.26",
-          "pnl_usd": "-35.49",
+          "allocated_value": "767.53",
+          "pnl_usd": "-35.41",
           "return_pct": "-0.001440",
           "contribution_pct": "-0.000144"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.137453",
-          "allocated_value": "769.26",
-          "pnl_usd": "265.34",
+          "allocated_value": "767.53",
+          "pnl_usd": "264.74",
           "return_pct": "-0.021536",
           "contribution_pct": "-0.002154"
         }
@@ -4564,8 +4564,8 @@
       "timestamp": 1764720000000,
       "week_number": 49,
       "portfolio": {
-        "start_value": "7738.13",
-        "end_value": "8065.69",
+        "start_value": "7720.70",
+        "end_value": "8047.53",
         "gross_return_pct": "0.042331",
         "net_return_pct": "0.042331",
         "total_fees": "0.00",
@@ -4576,80 +4576,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.066380",
-          "allocated_value": "773.81",
-          "pnl_usd": "-216.68",
+          "allocated_value": "772.07",
+          "pnl_usd": "-216.19",
           "return_pct": "0.084640",
           "contribution_pct": "0.008464"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.049423",
-          "allocated_value": "773.81",
-          "pnl_usd": "-364.17",
+          "allocated_value": "772.07",
+          "pnl_usd": "-363.35",
           "return_pct": "0.071114",
           "contribution_pct": "0.007111"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.162619",
-          "allocated_value": "773.81",
-          "pnl_usd": "575.14",
+          "allocated_value": "772.07",
+          "pnl_usd": "573.85",
           "return_pct": "0.071986",
           "contribution_pct": "0.007199"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.126280",
-          "allocated_value": "773.81",
-          "pnl_usd": "218.15",
+          "allocated_value": "772.07",
+          "pnl_usd": "217.66",
           "return_pct": "0.015135",
           "contribution_pct": "0.001514"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.059726",
-          "allocated_value": "773.81",
-          "pnl_usd": "-305.18",
+          "allocated_value": "772.07",
+          "pnl_usd": "-304.49",
           "return_pct": "0.013982",
           "contribution_pct": "0.001398"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.116157",
-          "allocated_value": "773.81",
-          "pnl_usd": "221.50",
+          "allocated_value": "772.07",
+          "pnl_usd": "221.01",
           "return_pct": "0.107335",
           "contribution_pct": "0.010733"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.087125",
-          "allocated_value": "773.81",
-          "pnl_usd": "-52.97",
+          "allocated_value": "772.07",
+          "pnl_usd": "-52.85",
           "return_pct": "0.069209",
           "contribution_pct": "0.006921"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103762",
-          "allocated_value": "773.81",
-          "pnl_usd": "58.19",
+          "allocated_value": "772.07",
+          "pnl_usd": "58.06",
           "return_pct": "0.036214",
           "contribution_pct": "0.003621"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.094826",
-          "allocated_value": "773.81",
-          "pnl_usd": "-44.38",
+          "allocated_value": "772.07",
+          "pnl_usd": "-44.28",
           "return_pct": "-0.005912",
           "contribution_pct": "-0.000591"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.133701",
-          "allocated_value": "773.81",
-          "pnl_usd": "237.97",
+          "allocated_value": "772.07",
+          "pnl_usd": "237.43",
           "return_pct": "-0.022056",
           "contribution_pct": "-0.002206"
         }
@@ -4659,8 +4659,8 @@
       "timestamp": 1765324800000,
       "week_number": 50,
       "portfolio": {
-        "start_value": "8065.69",
-        "end_value": "7331.07",
+        "start_value": "8047.53",
+        "end_value": "7314.56",
         "gross_return_pct": "-0.091079",
         "net_return_pct": "-0.091079",
         "total_fees": "0.00",
@@ -4671,80 +4671,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.069074",
-          "allocated_value": "806.57",
-          "pnl_usd": "-349.66",
+          "allocated_value": "804.75",
+          "pnl_usd": "-348.87",
           "return_pct": "-0.179885",
           "contribution_pct": "-0.017989"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.050788",
-          "allocated_value": "806.57",
-          "pnl_usd": "-460.58",
+          "allocated_value": "804.75",
+          "pnl_usd": "-459.54",
           "return_pct": "-0.155373",
           "contribution_pct": "-0.015537"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.167246",
-          "allocated_value": "806.57",
-          "pnl_usd": "452.88",
+          "allocated_value": "804.75",
+          "pnl_usd": "451.86",
           "return_pct": "-0.066349",
           "contribution_pct": "-0.006635"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.122985",
-          "allocated_value": "806.57",
-          "pnl_usd": "133.64",
+          "allocated_value": "804.75",
+          "pnl_usd": "133.34",
           "return_pct": "-0.052174",
           "contribution_pct": "-0.005217"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.058102",
-          "allocated_value": "806.57",
-          "pnl_usd": "-389.22",
+          "allocated_value": "804.75",
+          "pnl_usd": "-388.35",
           "return_pct": "-0.109436",
           "contribution_pct": "-0.010944"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.123401",
-          "allocated_value": "806.57",
-          "pnl_usd": "81.89",
+          "allocated_value": "804.75",
+          "pnl_usd": "81.70",
           "return_pct": "-0.107361",
           "contribution_pct": "-0.010736"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.089372",
-          "allocated_value": "806.57",
-          "pnl_usd": "-160.09",
+          "allocated_value": "804.75",
+          "pnl_usd": "-159.73",
           "return_pct": "-0.103164",
           "contribution_pct": "-0.010316"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.103153",
-          "allocated_value": "806.57",
-          "pnl_usd": "-40.38",
+          "allocated_value": "804.75",
+          "pnl_usd": "-40.29",
           "return_pct": "-0.079101",
           "contribution_pct": "-0.007910"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.090437",
-          "allocated_value": "806.57",
-          "pnl_usd": "-123.37",
+          "allocated_value": "804.75",
+          "pnl_usd": "-123.10",
           "return_pct": "-0.063393",
           "contribution_pct": "-0.006339"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.125442",
-          "allocated_value": "806.57",
-          "pnl_usd": "120.27",
+          "allocated_value": "804.75",
+          "pnl_usd": "120.00",
           "return_pct": "-0.083947",
           "contribution_pct": "-0.008395"
         }
@@ -4754,8 +4754,8 @@
       "timestamp": 1765929600000,
       "week_number": 51,
       "portfolio": {
-        "start_value": "7331.07",
-        "end_value": "7246.26",
+        "start_value": "7314.56",
+        "end_value": "7229.94",
         "gross_return_pct": "-0.011569",
         "net_return_pct": "-0.011569",
         "total_fees": "0.00",
@@ -4766,80 +4766,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.062325",
-          "allocated_value": "733.11",
-          "pnl_usd": "-303.56",
+          "allocated_value": "731.46",
+          "pnl_usd": "-302.88",
           "return_pct": "-0.059891",
           "contribution_pct": "-0.005989"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.047195",
-          "allocated_value": "733.11",
-          "pnl_usd": "-391.60",
+          "allocated_value": "731.46",
+          "pnl_usd": "-390.72",
           "return_pct": "-0.012966",
           "contribution_pct": "-0.001297"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.171797",
-          "allocated_value": "733.11",
-          "pnl_usd": "587.70",
+          "allocated_value": "731.46",
+          "pnl_usd": "586.38",
           "return_pct": "0.048719",
           "contribution_pct": "0.004872"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.128250",
-          "allocated_value": "733.11",
-          "pnl_usd": "202.56",
+          "allocated_value": "731.46",
+          "pnl_usd": "202.10",
           "return_pct": "-0.004834",
           "contribution_pct": "-0.000483"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.056928",
-          "allocated_value": "733.11",
-          "pnl_usd": "-323.74",
+          "allocated_value": "731.46",
+          "pnl_usd": "-323.02",
           "return_pct": "-0.019127",
           "contribution_pct": "-0.001913"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.121191",
-          "allocated_value": "733.11",
-          "pnl_usd": "155.57",
+          "allocated_value": "731.46",
+          "pnl_usd": "155.22",
           "return_pct": "0.000243",
           "contribution_pct": "0.000024"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.088183",
-          "allocated_value": "733.11",
-          "pnl_usd": "-113.48",
+          "allocated_value": "731.46",
+          "pnl_usd": "-113.23",
           "return_pct": "-0.041541",
           "contribution_pct": "-0.004154"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.104512",
-          "allocated_value": "733.11",
-          "pnl_usd": "13.02",
+          "allocated_value": "731.46",
+          "pnl_usd": "12.99",
           "return_pct": "-0.026186",
           "contribution_pct": "-0.002619"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.093192",
-          "allocated_value": "733.11",
-          "pnl_usd": "-77.48",
+          "allocated_value": "731.46",
+          "pnl_usd": "-77.30",
           "return_pct": "-0.040347",
           "contribution_pct": "-0.004035"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.126427",
-          "allocated_value": "733.11",
-          "pnl_usd": "166.21",
+          "allocated_value": "731.46",
+          "pnl_usd": "165.83",
           "return_pct": "-0.029700",
           "contribution_pct": "-0.002970"
         }
@@ -4849,8 +4849,8 @@
       "timestamp": 1766534400000,
       "week_number": 52,
       "portfolio": {
-        "start_value": "7246.26",
-        "end_value": "7246.48",
+        "start_value": "7229.94",
+        "end_value": "7230.16",
         "gross_return_pct": "0.000031",
         "net_return_pct": "0.000031",
         "total_fees": "0.00",
@@ -4861,80 +4861,80 @@
         "ADA": {
           "target_weight": "0.100000",
           "drifted_weight": "0.059279",
-          "allocated_value": "724.63",
-          "pnl_usd": "-294.96",
+          "allocated_value": "722.99",
+          "pnl_usd": "-294.30",
           "return_pct": "0.000276",
           "contribution_pct": "0.000028"
         },
         "AVAX": {
           "target_weight": "0.100000",
           "drifted_weight": "0.047128",
-          "allocated_value": "724.63",
-          "pnl_usd": "-383.40",
+          "allocated_value": "722.99",
+          "pnl_usd": "-382.54",
           "return_pct": "-0.000821",
           "contribution_pct": "-0.000082"
         },
         "BCH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.182275",
-          "allocated_value": "724.63",
-          "pnl_usd": "594.41",
+          "allocated_value": "722.99",
+          "pnl_usd": "593.07",
           "return_pct": "-0.001345",
           "contribution_pct": "-0.000134"
         },
         "BTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.129124",
-          "allocated_value": "724.63",
-          "pnl_usd": "211.59",
+          "allocated_value": "722.99",
+          "pnl_usd": "211.11",
           "return_pct": "0.000590",
           "contribution_pct": "0.000059"
         },
         "DOGE": {
           "target_weight": "0.100000",
           "drifted_weight": "0.056493",
-          "allocated_value": "724.63",
-          "pnl_usd": "-314.98",
+          "allocated_value": "722.99",
+          "pnl_usd": "-314.27",
           "return_pct": "0.000696",
           "contribution_pct": "0.000070"
         },
         "ETH": {
           "target_weight": "0.100000",
           "drifted_weight": "0.122639",
-          "allocated_value": "724.63",
-          "pnl_usd": "164.45",
+          "allocated_value": "722.99",
+          "pnl_usd": "164.08",
           "return_pct": "0.000456",
           "contribution_pct": "0.000046"
         },
         "LINK": {
           "target_weight": "0.100000",
           "drifted_weight": "0.085510",
-          "allocated_value": "724.63",
-          "pnl_usd": "-105.15",
+          "allocated_value": "722.99",
+          "pnl_usd": "-104.92",
           "return_pct": "-0.000242",
           "contribution_pct": "-0.000024"
         },
         "LTC": {
           "target_weight": "0.100000",
           "drifted_weight": "0.102967",
-          "allocated_value": "724.63",
-          "pnl_usd": "21.79",
+          "allocated_value": "722.99",
+          "pnl_usd": "21.74",
           "return_pct": "0.000390",
           "contribution_pct": "0.000039"
         },
         "SOL": {
           "target_weight": "0.100000",
           "drifted_weight": "0.090478",
-          "allocated_value": "724.63",
-          "pnl_usd": "-68.36",
+          "allocated_value": "722.99",
+          "pnl_usd": "-68.21",
           "return_pct": "0.000968",
           "contribution_pct": "0.000097"
         },
         "XRP": {
           "target_weight": "0.100000",
           "drifted_weight": "0.124108",
-          "allocated_value": "724.63",
-          "pnl_usd": "174.83",
+          "allocated_value": "722.99",
+          "pnl_usd": "174.44",
           "return_pct": "0.000160",
           "contribution_pct": "0.000016"
         }
@@ -4942,11 +4942,11 @@
     }
   ],
   "summary": {
-    "total_return_pct": "-0.275352",
-    "cagr": "-0.275352",
+    "total_return_pct": "-0.276984",
+    "cagr": "-0.276984",
     "max_drawdown_pct": "-0.489697",
-    "sharpe_ratio": "-0.207990",
-    "total_fees_paid": "10.00",
-    "final_balance": "7246.48"
+    "sharpe_ratio": "-0.211935",
+    "total_fees_paid": "32.50",
+    "final_balance": "7230.16"
   }
 }
